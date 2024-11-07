@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    color: white;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    font-size: 0.9rem;
+    background-color: #C8D9E6 !important;
+}
+
+.navbar,
+.main-slide
+{
+  background-color: #C8D9E6 !important;
+}
+
+#features
+{
+  background-color: #F5EFEB !important;
+}
+
+.dropdown-menu {
+        background-color: rgba(247, 246, 241, 0.8) !important; /* Set background color with transparency */
+        border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Border with partial opacity */
+        color: #fff !important; /* Text color */
+        padding: 10px !important; /* Add some padding */
+        border-radius: 5px !important; /* Round the corners */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Your specific hover color */
+}
+
+.color-teal{
+  color:#567C8D !important;
+}
+
+.carousel-caption h5 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.carousel-caption p {
+  color: #f8f9fa;
+  font-size: 1.1rem;
+}
+
+
+
+/* Animation Section */
+
+/* Roll In */
+@keyframes rollIn {
+  0% {
+      transform: translateX(-100%) rotate(-120deg);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0) rotate(0);
+      opacity: 1;
+  }
+}
+
+.carousel {
+  animation: rollIn 1s ease-out forwards; /* Adjust duration and easing as needed */
+  width: 100%; /* Set desired width */
+  height: 100%; /* Set desired height */
+  overflow: hidden; /* Hide overflow to prevent large images from spilling out */
+  margin: auto; /* Center the carousel */
+}
+
+.roll-in {
+  animation: rollIn 1s ease-out forwards;
+}
+
+
+
+/* Fade In Down */
+
+/* Basic Styling for Feature Images */
+.feature-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Fade-In-Down Animation */
+@keyframes fadeInDown {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.fade-in-down {
+  animation: fadeInDown 1s ease forwards;
+}
+
+
