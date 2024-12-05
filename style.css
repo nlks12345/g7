@@ -12,43 +12,39 @@ header {
 
 footer {
     font-size: 0.9rem;
-    background-color: #c4e2f2 !important;
-}
-
-.navbar,
-.main-slide
-{
-  background-color: #c4e2f2 !important;
-}
-
-.main-slide {
-  margin-top: 100px;
+    /* background-color: #c4e2f2 !important; */
+    background-color: rgba(135, 165, 158, 1);
 }
 
 .main-logo {
   width: 250px;
 }
 
-.navbar {
-  font-size: x-large;
-  font-weight: 500;
-  height: 150px;
-}
 
-.carousel-item img {
+/*.carousel-item img {
   width: 100%; /* Ensures the image spans the full width of the carousel */
-  height: 600px; /* Maintains the aspect ratio */
-  object-fit: cover; /* Adjusts how the image fits in its container */
-}
+ /* height: 600px; /* Maintains the aspect ratio */
+  /*object-fit: cover; /* Adjusts how the image fits in its container */
+/*}*/
 
-.carousel {
+/*.carousel {
   max-height: 800px; /* Set a maximum height for the carousel */
-  overflow: hidden; /* Ensures no overflow */
+/*  overflow: hidden; /* Ensures no overflow */
+/*}*/
+#location {
+  background-color: rgb(209, 235, 229);
 }
 
 #services
 {
-  background-color: #F5EFEB !important;
+  background-color: rgb(209 235 229);
+  /* #c1a694 !important; */
+}
+
+.main-about {
+  background-image: url('assets/images/main_about.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .dropdown-menu {
@@ -64,10 +60,39 @@ footer {
 }
 
 .color-teal{
-  color:#567C8D !important;
+  /* color:#567C8D !important; */
+  color:#2f5667 !important;
 }
 
-.carousel-caption h5 {
+.main-card {
+  margin: 50px;
+  border: none;
+}
+
+.main-carousel .carousel-inner .carousel-item > img{
+    height: 500px;
+    width: 600px;
+}
+
+.main-contact-img {
+  width: 500px;
+  height: 600px;
+}
+
+.main-contact {
+  background-image: url('assets/images/main_form_1.png');
+  background-size: 90% 110%;
+  background-repeat: no-repeat;
+}
+
+/* .main-contact {
+  background-image: url('assets/images/main_form_1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+
+/* .carousel-caption h5 {
   font-size: 1.75rem;
   font-weight: bold;
   color: #ffffff;
@@ -76,14 +101,14 @@ footer {
 .carousel-caption p {
   color: #f8f9fa;
   font-size: 1.1rem;
-}
+} */
 
 
 
 /* Animation Section */
 
 /* Roll In */
-@keyframes rollIn {
+/* @keyframes rollIn {
   0% {
       transform: translateX(-100%) rotate(-120deg);
       opacity: 0;
@@ -92,15 +117,15 @@ footer {
       transform: translateX(0) rotate(0);
       opacity: 1;
   }
-}
+} */
 
-.carousel {
+/*.carousel {
   animation: rollIn 1s ease-out forwards; /* Adjust duration and easing as needed */
-  width: 100%; /* Set desired width */
-  height: 100%; /* Set desired height */
-  overflow: hidden; /* Hide overflow to prevent large images from spilling out */
-  margin: auto; /* Center the carousel */
-}
+/*  width: 100%; /* Set desired width */
+/*  height: 100%; /* Set desired height */
+/*  overflow: hidden; /* Hide overflow to prevent large images from spilling out */
+/*  margin: auto; /* Center the carousel */
+/*}
 
 .roll-in {
   animation: rollIn 1s ease-out forwards;
@@ -108,7 +133,7 @@ footer {
 
 .btn-send-message{
   background-color: #033665!important;
-}
+}*/
 
 
 /* Fade In Down */
@@ -149,61 +174,6 @@ footer {
 }
 
 
-/* FOR LOADNIG LOGO PURPOSE */
-
-
-/* styles.css */
-body {
-  /* margin: 0;
-  padding: 0; */
-  /*overflow: hidden; /* Prevent scrolling while the popup is active */
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center;
-  height: 100vh; */
-  /*background-color: #000; /* Background color for the popup */
-}
-
-/* Popup container */
-/* .logo-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #C8D9E6 !important;
-  z-index: 9999;
-} */
-
-/* Logo image */
-/*.logo-image {
-  /*width: 300px; /* Adjust size */
-  /* height: auto;
-  animation: fadeIn 2s ease-out;
-} */
-
-/* Fade-in animation */
-/* @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-} */
-
-/* Hide content initially */
-/* .content {
-  display: none;
-} */
-
-
-
 /* Hero Contain */
 
 .hero {
@@ -232,7 +202,13 @@ body {
   transform: translateY(-50%);
 }*/
 
-
+#about{
+  background-image: url('assets/images/dental/brand.jpeg');
+  height: 800px;
+  width: 100%;
+  color: white;
+  background-repeat: no-repeat;
+}
 
 /* Services Section */
 .services-section img {
@@ -270,3 +246,143 @@ body {
   transform: translateY(0);
   visibility: visible;
 }
+
+
+@keyframes rollInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100%) rotate(360deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0) rotate(0deg);
+  }
+}
+
+.roll-in-right {
+  animation: rollInRight 1s ease-out;
+  animation-fill-mode: both; /* Ensures the element stays in the final state */
+}
+
+/* FOR HOME NAVBAR & HERO BACKGORUND */
+/* Navbar */
+
+
+.navbar {
+  font-size: x-large;
+  font-weight: 500;
+  height: 150px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent; /* Initially transparent */
+}
+
+.navbar.scrolled {
+  background-color: rgba(135, 165, 158, 1); /* Background color on scroll */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+header {
+  background: url('assets/images/home_carousel_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+
+/* END FOR HOME NAVBAR & HERO BACKGORUND */
+
+
+
+
+/* FOR 3D CAROUSEL */
+/* .carousel {
+  width: 300px;
+  height: 300px; */
+  /* perspective: 1000px; Creates 3D effect */
+/* } */
+
+/* .carousel-items {
+  width: 100%;
+  height: 100%;
+  position: relative; */
+  /*transform-style: preserve-3d; /* Enables 3D transforms */
+  /*animation: rotate 10s infinite linear; /* Adds auto-rotation */
+/* } */
+
+/* .carousel-items img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+} */
+
+/* Position the images in a circular arrangement */
+/* .carousel-items img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(400px);
+}
+.carousel-items img:nth-child(2) {
+  transform: rotateY(90deg) translateZ(400px);
+}
+.carousel-items img:nth-child(3) {
+  transform: rotateY(180deg) translateZ(400px);
+}
+.carousel-items img:nth-child(4) {
+  transform: rotateY(270deg) translateZ(400px);
+} */
+
+/* Rotate animation */
+/* @keyframes rotate {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+} */
+
+/* END FOR 3D CAROUSEL  */
