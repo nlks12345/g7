@@ -309,8 +309,15 @@ footer {
 }
 
 /* Hero Section */
-header {
+.main-header {
   background: url('assets/images/home_carousel_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.about-header {
+  background: 
+  linear-gradient(rgba(47, 65, 56, 0.5), rgba(0, 0, 0, 0.5)), /* Background color overlay */
+  url('assets/images/dental/brand.jpeg') no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -386,3 +393,55 @@ header {
 } */
 
 /* END FOR 3D CAROUSEL  */
+
+
+
+
+/* FOR PHOTO GALLERY */
+.photo-gallery {
+  color:#313437;
+  background-color:#fff;
+}
+
+.photo-gallery p {
+  color:#7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+
+
+/* END FOR PHOTO GALLERY */
+
+
+
