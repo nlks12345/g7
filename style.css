@@ -2,18 +2,27 @@
 
 body {
     /* font-family: Arial, sans-serif; */
-    font-family: "American Typewriter", serif;
+    /* font-family: "American Typewriter", serif; */
+    font-family: "Rozha One" !important;
 }
 
 header {
-    background: linear-gradient(45deg, #007bff, #6f42c1);
-    color: white;
+    /* background: linear-gradient(45deg, #007bff, #6f42c1);
+    color: white; */
 }
 
 footer {
     font-size: 0.9rem;
     /* background-color: #c4e2f2 !important; */
-    background-color: rgba(135, 165, 158, 1);
+    /* background-color: rgba(135, 165, 158, 1); */
+    /* background: linear-gradient(360deg,#87a59e, #d1ebe5); */
+    background: linear-gradient(360deg,#87a59e, #bfddca);
+
+
+    
+
+    /* background: linear-gradient(360deg, #87a59e 50%, #bfddca 40%,#d1ebe5 10%); */
+
 }
 
 .main-logo {
@@ -32,15 +41,35 @@ footer {
 /*  overflow: hidden; /* Ensures no overflow */
 /*}*/
 #location {
-  background-color: rgb(209, 235, 229);
+  /* background-color: #d1ebe5; */
+
+  background-color: #bfddca;
+  
 }
 
 #services
 {
-  background-color: rgb(209 235 229);
+  /* background-color: #d1ebe5; */
+  background-color: #bfddca;
+
   /* #c1a694 !important; */
 }
 
+.btn-more-service:hover {
+  color: white;
+  background-color: #2f5667;
+}
+
+.feature-img {
+  transition: transform 0.3s ease, border 0.3s ease; /* Add smooth transition for the border */
+  border: 5px solid transparent; /* Initial border with no color */
+}
+
+.feature-img:hover {
+  transform: scale(1.2); /* Enlarge the image */
+  border: 2px solid #2f5667; /* Add a colored border on hover */
+  z-index: 1; /* Ensure the hovered image appears above others */
+}
 .main-about {
   background-image: url('assets/images/main_about.png');
   background-size: 100% 100%;
@@ -75,7 +104,7 @@ footer {
 }
 
 .main-contact-img {
-  width: 500px;
+  width: 100%;
   height: 600px;
 }
 
@@ -83,6 +112,10 @@ footer {
   background-image: url('assets/images/main_form_1.png');
   background-size: 90% 110%;
   background-repeat: no-repeat;
+}
+
+.social-logo {
+  color: #2f5667;
 }
 
 /* .main-contact {
@@ -288,7 +321,16 @@ footer {
 }
 
 .navbar.scrolled {
-  background-color: rgba(135, 165, 158, 1); /* Background color on scroll */
+  /* background-color: #87a59e;  */
+  /* background: linear-gradient(180deg, #87a59e, #d1ebe5); */
+
+  background: linear-gradient(180deg, #87a59e, #bfddca);
+
+
+  /* background: linear-gradient(180deg, #bfddca 0%, #87a59e 25%,#87a59e 50%, #87a59e 75%,#bfddca 100%); */
+
+  /* background: linear-gradient(45deg, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); */
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
 
@@ -315,10 +357,9 @@ footer {
 }
 
 .about-header {
-  background: 
-  linear-gradient(rgba(47, 65, 56, 0.5), rgba(0, 0, 0, 0.5)), /* Background color overlay */
-  url('assets/images/dental/brand.jpeg') no-repeat center center/cover;
+  background: url('assets/images/about_us.png') no-repeat center center/cover;
   height: 100vh;
+
 }
 
 .hero {
@@ -340,6 +381,135 @@ footer {
 
 
 /* END FOR HOME NAVBAR & HERO BACKGORUND */
+
+#vision_mission {
+  margin: 80px;
+}
+
+/* ABOUT CAROUSEL GALLERY */
+#gallery {
+  /* background-color: #d1ebe5; */
+  background-color: #bfddca;
+
+}
+
+.container .gallery-container {
+  /* background-color: #fff; */
+  color: #35373a;
+  min-height: 100vh;
+  padding: 30px 50px;
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 18px;
+  color: #999;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:hover {
+
+}
+
+.tz-gallery .lightbox:before {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e003';
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s; */
+}
+
+
+.tz-gallery .lightbox:after {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(46, 132, 206, 0.7);
+  content: '';
+  transition: 0.4s; */
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+  opacity: 1;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+/* @media(max-width: 768px) {
+  body {
+      padding: 0;
+  }
+} */
+/* END FOR ABOUT CAROUSEL GALLERY */
+
+
+.vision-card,
+.mission-card {
+  border-radius: 50px;
+  border-width: 3px;
+  height: 300px;
+  background-color: #bfddca;
+}
+
+
+.why-card-top {
+  border-bottom: 3px;
+  border-bottom-left-radius: 80px; 
+  border-bottom-right-radius: 80px; 
+  background-color: #bfddca;
+  height: 200px;
+
+}
+
+.why-card-bottom {
+  border-top: 3px;
+  border-top-left-radius: 80px; 
+  border-top-right-radius: 80px; 
+  background-color: #bfddca;
+  height: 200px;
+
+}
+
+.card-title-why {
+  margin: 10px;
+  padding-top: 10px;
+}
 
 
 
@@ -397,51 +567,75 @@ footer {
 
 
 
-/* FOR PHOTO GALLERY */
-.photo-gallery {
-  color:#313437;
-  background-color:#fff;
+/* FOR TEAM IMAGE GALLERY */
+
+#team {
+  height: 750px;
+}
+.container-team{
+	margin: 4% auto;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel_team{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel_team:hover{
+	animation-play-state: paused;
+}
+#carousel_team figure{
+	display: block;
+	position: absolute;
+	width: auto;
+	height: 100%;
+	/* left: 10px; */
+	/* top: 10px; */
+	background: black;
+	overflow: hidden;
+	/* border: solid 5px black; */
 }
 
-.photo-gallery p {
-  color:#7d8285;
-}
-
-.photo-gallery h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .photo-gallery h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
-.photo-gallery .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto 40px;
-}
-
-.photo-gallery .intro p {
-  margin-bottom:0;
-}
-
-.photo-gallery .photos {
-  padding-bottom:20px;
-}
-
-.photo-gallery .item {
-  padding-bottom:30px;
+#carousel_team figure > img{
+  width: auto;
+  height: 100%;
 }
 
 
-/* END FOR PHOTO GALLERY */
+
+#carousel_team figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+
+#carousel_team figure:nth-child(2) { transform: rotateY(100deg) translateZ(288px);}
+#carousel_team figure:nth-child(3) { transform: rotateY(220deg) translateZ(288px);}
+
+/* #carousel_team figure:nth-child(4) { transform: rotateY(280deg) translateZ(288px);} */
+#carousel_team figure:nth-child(4) { transform: rotateY(280deg) translateZ(288px);}
+
+/* img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+} */
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+/* END FOR TEAM IMAGE GALLERY */
 
 
 
