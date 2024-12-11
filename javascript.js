@@ -88,6 +88,12 @@ document.addEventListener("scroll", function () {
 /* END FOR HOME NAVBAR & HERO BACKGORUND */
 
 
+/* ABOUT CAROUSEL GALLERY */
+
+
+/* END FOR ABOUT CAROUSEL GALLERY */
+
+
 /* FOR 3D CAROUSEL */
 // const carousel = document.querySelector('.carousel-items');
 // let angle = 0;
