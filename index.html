@@ -39,17 +39,17 @@
                         <a class="nav-link color-teal" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link color-teal" href="#service">Services</a>
+                        <a class="nav-link color-teal" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  color-teal" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  color-teal" href="contact.html">Contact</a>
+                        <a class="nav-link  color-teal" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank" style="text-decoration: none;">
+            <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
                 <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
                   Chat with Us
@@ -170,7 +170,7 @@
 
 
     <!-- Services Section -->
-    <section id="services" class="pt-5">
+    <section id="services_main" class="pt-5">
         <div class="container services-section ">
             <h2 class="text-center mb-4">Services</h2>
             <div class="row text-center">
@@ -218,34 +218,38 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
-        <div class="card main-card">
-            <div class="row g-0">
+        <!-- <div class="card main-card"> -->
+            <div class="row col-12">
               
               <div class="col-md-6">
-                <div class="card-body">
-                    <img src="assets/images/callusnow.png" class="d-block main-contact-img" alt="Slide 2">
-                </div>
+                    <img src="assets/images/contacusnow1.png" class="d-block main-contact-img" alt="Slide 2">
               </div>
               <div class="col-md-6 main-contact">
                 <h2 class="text-center mb-4">Contact Us</h2>
                 <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
+                    <div class="row mb-3 col-12">
+                        <div class="col-6">
+                            <label for="name" class="form-label col-3">Name</label>
+                            <input type="text" class="form-control col-3" id="name" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="email" class="form-label col-3">Email</label>
+                            <input type="email" class="form-control col-3" id="email" required>
+                        </div>
                     </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-send-message" style="background-color: #2f5667; color: white;">Send Message</button>
-            </form>
+                    <div class="mb-3 ">
+                        <label for="name" class="form-label">Contact No</label>
+                            <input type="tel" class="form-control" id="contact" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-send-message" style="background-color: #2f5667; color: white;">Send Message</button>
+                </form>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
      
     </section>
 
@@ -262,13 +266,13 @@
                               <label for="exampleDropdownFormEmail1" class="form-label color-teal"><b>Email address :</b></label>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmai.com</label>
+                                <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
                             </div>
                             <div class="mb-3">
                               <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Contact Number :</b></label>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleDropdownFormPassword1" class="form-label">01129223574</label>
+                                <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Dental Address :</b></label>
@@ -318,7 +322,7 @@
     </section>
 
     <div id="whatsapp-button" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-        <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
         </a>
       </div>
