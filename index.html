@@ -39,7 +39,7 @@
                         <a class="nav-link color-teal" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link color-teal" href="#">Services</a>
+                        <a class="nav-link color-teal" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  color-teal" href="about.html">About</a>
@@ -208,7 +208,7 @@
                     <p class="feature-text">Restore damaged or missing teeth with durable crowns and bridges.</p>
                 </div>
                 <div class="col-lg12 col-md-12 mb-12 fade-in-down my-5" >
-                    <button type="submit" class="btn btn-more-service" style="background-color: transparent; color: #2f5667; border: 2px solid;">More Services</button>
+                    <a type="button" href="services.html" class="btn btn-more-service" style="background-color: transparent; color: #2f5667; border: 2px solid;">More Services</a>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
               </div>
               <div class="col-md-6 main-contact">
                 <h2 class="text-center mb-4">Contact Us</h2>
-                <form>
+                <form id="emailForm">
                     <div class="row mb-3 col-12">
                         <div class="col-6">
                             <label for="name" class="form-label col-3">Name</label>
@@ -283,23 +283,23 @@
                           </form>
                           <div class="row justify-content-center">
                             <div class="col-auto">
-                              <a class="social-logo" href="https://facebook.com" target="_blank">
+                              <a class="social-logo" href="https://www.facebook.com/profile.php?id=61569323519005" target="_blank">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                               </a>
                             </div>
                             <div class="col-auto">
-                              <a class="social-logo" href="https://twitter.com" target="_blank">
-                                <i class="fab fa-twitter fa-2x"></i>
+                              <a class="social-logo" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank">
+                                <i class="fab fa-whatsapp fa-2x"></i>
                               </a>
                             </div>
                             <div class="col-auto">
-                              <a class="social-logo" href="https://instagram.com" target="_blank">
+                              <a class="social-logo" href="https://www.instagram.com/sosmiledental" target="_blank">
                                 <i class="fab fa-instagram fa-2x"></i>
                               </a>
                             </div>
                             <div class="col-auto">
-                              <a class="social-logo" href="https://linkedin.com" target="_blank">
-                                <i class="fab fa-linkedin-in fa-2x"></i>
+                              <a class="social-logo" href="https://www.tiktok.com/@sosmiledental" target="_blank">
+                                <i class="fab fa-tiktok fa-2x"></i>
                               </a>
                             </div>
                           </div>
@@ -338,6 +338,23 @@
     <script src="javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    
+
+    <script>
+        fetch("https://api.mailgun.net/v3/sandboxc8c47002025749189d1903d4eeda775c.mailgun.org/messages", {
+            method: "POST",
+            headers: {
+                Authorization: "Basic " + btoa("api:da554c25-b5148785"),
+            },
+            body: new URLSearchParams({
+                from: "Your Name <you@yourdomain.com>",
+                to: "recipient@example.com",
+                subject: "Test Email",
+                text: "This is a test email.",
+            }),
+        });
+
+    </script>
 
     <script type="application/ld+json">
         {

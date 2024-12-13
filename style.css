@@ -47,12 +47,10 @@ footer {
   
 }
 
-#services
-{
-  /* background-color: #d1ebe5; */
-  background-color: #bfddca;
 
-  /* #c1a694 !important; */
+
+#services_main {
+  background-color: #bfddca;
 }
 
 .btn-more-service:hover {
@@ -569,6 +567,14 @@ img:hover{
 
 /* Service List */
 
+#services
+{
+  /* background-color: #d1ebe5; */
+  background-color: #ffff;
+  text-align: center;
+  /* #c1a694 !important; */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
 :root {
@@ -580,7 +586,7 @@ img:hover{
 
 
 .content {
-	width: 90vmin;
+	/* width: 90vmin; */
 }
 
 h2 {
@@ -597,7 +603,7 @@ h2 {
 	padding: 0.73em;
 	background: linear-gradient(
 		83deg,
-		var(--yellow) 0 97%,
+		#bfddca 0 97%,
 		#fff0 calc(97% + 1px) 100%
 	);
 	position: relative;
@@ -611,20 +617,20 @@ h2 {
 	text-align: right;
 	background: linear-gradient(
 		-83deg,
-		var(--yellow) 0 97%,
+		#bfddca 0 97%,
 		#fff0 calc(97% + 1px) 100%
 	);
 }
 
 .thumb {
-	width: 13vmin;
-	height: 13vmin;
+	width: 200px;
+	height: 200px;
 	float: left;
 	margin-right: 1.25em;
 	background: linear-gradient(
 		var(--deg),
 		var(--dark) 0 70%,
-		var(--yellow) 0% 100%
+		#2f5667 0% 100%
 	);
 	transform: rotate(-4deg);
 	transition: var(--trans);
@@ -674,15 +680,19 @@ h2 {
 
 .description {
 	padding-top: 1vmin;
+  font-size: 22px;
+  margin:50px;
 }
 
 .description p {
 	padding: 0 2em;
 	margin-bottom: 1em;
+  font-size: 22px;
+  margin:50px;
 }
 
-h3 {
-	background: linear-gradient(182deg, #fff0 60%, var(--dark) 0 100%);
+#services h3 {
+	background: linear-gradient(182deg, #2f5667 60%, var(--dark) 0 100%);
 	display: inline;
 	transform: rotate(-2deg);
 	position: absolute;
@@ -690,7 +700,7 @@ h3 {
 	margin-top: -2.25em;
 	left: 9vmin;
 	padding: 0.5em 0.75em;
-	color: var(--yellow);
+	color: #ffff; /*var(--yellow);*/
 	border-radius: 0.25em;
 	font-size: 1.35em;
 	transform-origin: left bottom;
@@ -710,7 +720,7 @@ h3 {
 	background: linear-gradient(180deg, #fff0 59%, var(--dark) 0 100%);
 }
 
-.co-funder:after {
+/* .co-funder:after {
 	content: "CO-FUNDER";
 	font-size: 0.75em;
 	position: absolute;
@@ -728,13 +738,13 @@ h3 {
 	right: inherit;
 	left: 4em;
 	transform: rotate(-3deg);
-}
+} */
 
 .description p a {
 	display: inline-block;
 	margin: 0.5em 0 0 0;
 	background: var(--dark);
-	color: var(--yellow);
+	color: #ffff; /*var(--yellow);*/
 	padding: 0.1em 0.5em 0.35em;
 	border-radius: 0.5em;
 	text-decoration: none;
