@@ -12,6 +12,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -46,7 +49,7 @@
                             <a class="nav-link  color-teal" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  color-teal" href="contact.html">Contact</a>
+                            <a class="nav-link  color-teal" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -283,6 +286,76 @@
     </section>
     <!-- End of Gallery Section -->
 
+    <!-- Locaiton Section -->
+    <section id="location" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Locate Us!</h2>
+          <div class="row">
+              <div class="col-4 main-location-contact">
+                  <h5 class="text-center mb-3">Contact Details</h2>
+                      <form class="px-4 py-3">
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address :</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Contact Number :</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleDropdownFormPassword1" class="form-label"> Dental Address :</label>
+                            </div>
+                            <div class="mb-3">
+                              <p>So Smile Dental (Bayan Baru) - google/waze</p>
+                              <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
+                            </div>
+                        </form>
+                        <div class="row justify-content-center">
+                          <div class="col-auto">
+                            <a class="social-logo" href="https://www.facebook.com/profile.php?id=61569323519005" target="_blank">
+                              <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                          </div>
+                          <div class="col-auto">
+                            <a class="social-logo" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank">
+                              <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                          </div>
+                          <div class="col-auto">
+                            <a class="social-logo" href="https://www.instagram.com/sosmiledental" target="_blank">
+                              <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                          </div>
+                          <div class="col-auto">
+                            <a class="social-logo" href="https://www.tiktok.com/@sosmiledental" target="_blank">
+                              <i class="fab fa-tiktok fa-2x"></i>
+                            </a>
+                          </div>
+                        </div>
+              </div>
+              <div class="col-8 py-5">
+                  <div class="map-container" style="width: 80%; height: 400px;">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy" 
+                          width="700" 
+                          height="350" 
+                          style="border:0;" 
+                          allowfullscreen="" 
+                          loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- End for Location Section -->
+
 
     <!-- Modal -->
     <div class="modal fade" id="doctorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -376,6 +449,8 @@
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
