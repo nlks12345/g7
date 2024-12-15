@@ -173,25 +173,6 @@ footer {
   background-repeat: no-repeat;
 }
 
-/* Services Section */
-/* .services-section img {
-  width: 200px;
-  height: 200px;
-} */
-
-
-
-/* Slide-down animation */
-/* @keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 
 /* Initially hide the section */
 
@@ -210,22 +191,6 @@ footer {
   visibility: visible;
 }
 
-
-@keyframes rollInRight {
-  0% {
-      opacity: 0;
-      transform: translateX(100%) rotate(360deg);
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0) rotate(0deg);
-  }
-}
-
-.roll-in-right {
-  animation: rollInRight 1s ease-out;
-  animation-fill-mode: both; /* Ensures the element stays in the final state */
-}
 
 /* FOR HOME NAVBAR & HERO BACKGORUND */
 /* Navbar */
@@ -278,7 +243,6 @@ footer {
 .about-header {
   background: url('assets/images/about_us.png') no-repeat center center/cover;
   height: 100vh;
-
 }
 
 .contact-header {
@@ -329,176 +293,7 @@ footer {
   z-index: 1000;
 }
 
-/* Custom Media Queries */
-@media (max-width: 991.98px) {
-  .navbar {
-    height: 150px; /* Allow flexible height on smaller screens */
-  }
-
-  .navbar-collapse {
-    background-color: #87a59e; /* Add background for collapsed menu */
-    padding: 1rem; /* Add padding inside the menu */
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-bottom: 1rem; /* Space between items */
-  }
-
-  #whatsapp-button {
-    display: inline-block;
-    margin-top: 1rem; /* Add spacing for the button */
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 1000;
-  }
-}
-
-@media (max-width: 575.98px) {
-
-  .navbar {
-    height: 150px; /* Allow flexible height on smaller screens */
-  }
-  .nav-whatsapp-button{
-    display: none;
-  }
-
-  .map-container{
-    width: 100%;
-    height: auto;
-  }
-  
-  .navbar-brand img {
-    max-height: 40px; /* Further reduce logo size for mobile */
-  }
-
-  #whatsapp-button {
-    font-size: 12px; /* Smaller text for smaller screens */
-    padding: 6px 10px;
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 1000;
-  }
-
-  .nav-whatsapp-button{
-    display: none;
-  }
-  
-  .nav-container {
-    display: inline!important;
-  }
-}
-
-/* Adjustments for screens with a max width of 430px */
-
-@media (max-width: 430px) {
-  
-  .feature-img {
-    height: 150px;
-    width: 150px;
-  }
-
-  .service-mobile {
-    display: none;
-  }
-
-  .map-container{
-    width: 375px;
-    height: 300px;
-  }
-
-  .map-iframe{
-    width: 100%;
-    height: 300px;
-  }
-
-  .nav-whatsapp-button{
-    display: none;
-  }
-  
-  .nav-container {
-    display: inline!important;
-  }
-
-  /* Navbar */
-  .navbar {
-    height: 100px;
-    font-size: 0.9rem; /* Slightly smaller text size */
-      /*padding: 0.5rem 1rem; /* Reduce padding */
-  }
-
-  .navbar .navbar.scrolled{
-    height: 150px;
-  }
-
-  .navbar-brand img {
-      max-height: 35px; /* Smaller logo */
-  }
-
-  .navbar-toggler {
-      padding: 0.25rem 0.5rem; /* Adjust toggler button size */
-  }
-
-  .navbar-collapse {
-      padding: 0.5rem; /* Reduce padding inside the dropdown */
-  }
-
-  .nav-item {
-      margin-bottom: 0.75rem; /* Reduced spacing between nav items */
-  }
-
-  .nav-link {
-      font-size: 0.85rem; /* Slightly smaller text size for links */
-  }
-
-  /* WhatsApp Button */
-  #whatsapp-button {
-    font-size: 12px; /* Smaller text */
-    padding: 6px 12px; /* Reduce button padding */
-    display: block; /* Ensure the button stays visible */
-    width: 100%; /* Full-width button for better usability */
-    margin: 0.5rem auto; /* Add margin for spacing */
-    position: fixed; 
-    bottom: 100px; 
-    right: 50px; 
-    z-index: 1000;
-    text-align: right;
-  }
-
-  .main-carousel .carousel-inner .carousel-item > img{
-    height: 300px;
-    width: auto;
-}
-
-  /* Hero Section */
-  .main-header {
-      height: 300px; /* Allow hero section to adjust dynamically */
-      /*padding: 2rem 0; /* Add padding for better layout */
-  }
-
-  .main-about {
-    background-image: url('assets/images/main_about.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-  .hero h1 {
-      font-size: 2rem; /* Reduce heading size */
-  }
-
-  .hero p {
-      font-size: 1rem; /* Adjust paragraph text size */
-  }
-}
-
-/* END FOR HOME NAVBAR & HERO BACKGORUND */
-
+/* 430px */
 
 
 
@@ -519,6 +314,19 @@ footer {
 
 
 /* ABOUT CAROUSEL GALLERY */
+
+.team-mobile{
+  display: none;
+}
+
+.gallery-mobile{
+  display: none;
+}
+
+.why-mobile{
+  display: none;
+}
+
 #gallery {
   /* background-color: #d1ebe5; */
   background-color: #bfddca;
@@ -546,7 +354,7 @@ footer {
   color: #999;
 }
 
-.tz-gallery {
+#gallery .tz-gallery {
   padding: 40px;
 }
 
@@ -645,6 +453,9 @@ footer {
 
 
 /* FOR TEAM IMAGE GALLERY */
+.team-gallery-mobile{
+  display: none;
+}
 
 #team {
   height: 750px;
@@ -671,11 +482,7 @@ footer {
 	position: absolute;
 	width: auto;
 	height: 100%;
-	/* left: 10px; */
-	/* top: 10px; */
-	/* background: black; */
 	overflow: hidden;
-	/* border: solid 5px black; */
 }
 
 #carousel_team figure a > img{
@@ -749,12 +556,12 @@ h2 {
 	text-align: center;
 }
 
-.team {
+.service-list {
 	padding: 2em 0 2em 2.5em;
 	margin: 0;
 }
 
-.member {
+.service-item {
 	margin: 1.5em 0 0.5em;
 	padding: 0.73em;
 	background: linear-gradient(
@@ -769,7 +576,7 @@ h2 {
 	transition: var(--trans);
 }
 
-.member:nth-of-type(even) {
+.service-item:nth-of-type(even) {
 	text-align: right;
 	background: linear-gradient(
 		-83deg,
@@ -796,7 +603,7 @@ h2 {
 	padding: 0.5em;
 }
 
-.member:nth-of-type(even) .thumb {
+.service-item:nth-of-type(even) .thumb {
 	--deg: 86deg;
 	float: right;
 	margin-left: 2em;
@@ -812,24 +619,24 @@ h2 {
 	background: var(--dark);
 }
 
-.member:hover {
+.service-item:hover {
 	transform: scale(1);
 	transition: var(--trans);
 	filter: drop-shadow(0px 20px 10px #0008);
 }
 
-.member:hover .thumb {
+.service-item:hover .thumb {
 	padding: 0.1em;
 	transition: var(--trans);
 	transform: rotate(-1deg);
 	--deg: -89deg;
 }
 
-.member:nth-of-type(even):hover .thumb {
+.service-item:nth-of-type(even):hover .thumb {
 	--deg: 91deg;
 }
 
-.member:hover .thumb img {
+.service-item:hover .thumb img {
 	filter: none;
 	transition: var(--trans);
 }
@@ -862,7 +669,7 @@ h2 {
 	transform-origin: left bottom;
 }
 
-.member:nth-of-type(even) h3 {
+.service-item:nth-of-type(even) h3 {
 	left: inherit;
 	right: 9vmin;
 	transform: rotate(2deg);
@@ -870,7 +677,7 @@ h2 {
 	background: linear-gradient(-182deg, #fff0 60%, var(--dark) 0 100%);
 }
 
-.member:hover h3 {
+.service-item:hover h3 {
 	transition: var(--trans);
 	transform: rotate(0deg);
 	background: linear-gradient(180deg, #fff0 59%, var(--dark) 0 100%);
@@ -930,4 +737,306 @@ h2 {
   border: none;
 }
 
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* RESPONSIVE DESIGN FOR PHONE */
+/* ///////////////////////////////////////////////////////////// */
+
+
+/* Extra Small Phones (Portrait, less than 320px) */
+@media only screen and (max-width: 319px) {
+  /* Styles for very small devices */
+}
+
+/* Small Phones (320px to 480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* Home Page */
+  .feature-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .service-mobile {
+    display: none;
+  }
+
+  .map-container{
+    width: 375px;
+    height: 300px;
+  }
+
+  .map-iframe{
+    width: 100%;
+    height: 300px;
+  }
+
+  .nav-whatsapp-button{
+    display: none;
+  }
+  
+  .nav-container {
+    display: inline!important;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 100px;
+    font-size: 0.9rem; /* Slightly smaller text size */
+      /*padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar .navbar.scrolled{
+    height: 150px;
+  }
+
+  .navbar-brand img {
+      max-height: 35px; /* Smaller logo */
+  }
+
+  .navbar-toggler {
+      padding: 0.25rem 0.5rem; /* Adjust toggler button size */
+  }
+
+  .navbar-collapse {
+      padding: 0.5rem; /* Reduce padding inside the dropdown */
+  }
+
+  .nav-item {
+      margin-bottom: 0.75rem; /* Reduced spacing between nav items */
+  }
+
+  .nav-link {
+      font-size: 0.85rem; /* Slightly smaller text size for links */
+  }
+
+  /* WhatsApp Button */
+  #whatsapp-button {
+    font-size: 12px; /* Smaller text */
+    padding: 6px 12px; /* Reduce button padding */
+    display: block; /* Ensure the button stays visible */
+    width: 100%; /* Full-width button for better usability */
+    margin: 0.5rem auto; /* Add margin for spacing */
+    position: fixed; 
+    bottom: 100px; 
+    right: 50px; 
+    z-index: 1000;
+    text-align: right;
+  }
+
+  .main-carousel .carousel-inner .carousel-item > img,
+  .gallery-carousel .carousel-inner .carousel-item > img,
+  .team-carousel .carousel-inner .carousel-item > img
+  {
+    height: 300px;
+    width: auto;
+  }
+
+  /* Hero Section */
+  .main-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+      /*padding: 2rem 0; /* Add padding for better layout */
+  }
+
+  .main-about {
+    background-image: url('assets/images/main_about.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+  .hero h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Adjust paragraph text size */
+  }
+
+  /* End for Home Page */
+
+  /*  */
+  /*  */
+
+  /* About Page */
+
+  /* Header */
+  .about-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Team Gallery */
+  .team-mobile{
+    display: block;
+  }
+
+  .container-team{
+    display: none;
+  }
+
+  .gallery-mobile{
+    display: block;
+  }
+
+  .gallery-container{
+    display: none;
+  }
+
+  /* Vision Mision */
+  .blockquote{
+    font-size: 15px;
+  }
+
+  /* Why card choose us */
+
+  .why-card-row{
+    display: none;
+  }
+
+  .why-card-top {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+  
+  .why-card-bottom {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .why-mobile{
+    display: block;
+  }
+
+  /* End for About Page */
+
+  /*  */
+  /*  */
+  
+  /* Service Page */
+
+    /* Header */
+    .service-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+    }
+
+    /* Service List */
+    .service-item .description > p{
+        font-size: 15px;
+        margin: 0;
+    }
+  /* End for Service Page */
+
+  /*  */
+  /*  */
+
+  /* Contact Page */
+  .contact-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Contact Form */
+  .contact-form{
+    margin-bottom :50px;
+  }
+
+  /* End for Contact Page */
+
+}
+
+/* Medium Phones (481px to 600px) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  /* Styles for medium-sized phones */
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* END FOR RESPONSIVE DESIGN FOR PHONE */
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* RESPONSIVE DESIGN FOR TABLET */
+/* ///////////////////////////////////////////////////////////// */
+
+/* Small Tablets (601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles for small tablets */
+}
+
+/* Large Tablets (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for larger tablets */
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* END FOR RESPONSIVE DESIGN FOR TABLET */
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* RESPONSIVE DESIGN FOR LAPTOP */
+/* ///////////////////////////////////////////////////////////// */
+
+
+/* Small Laptops (1025px to 1280px) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for small laptops */
+}
+
+/* Medium Laptops (1281px to 1440px) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  /* Styles for medium laptops */
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* END FOR RESPONSIVE DESIGN FOR LAPTOP */
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* RESPONSIVE DESIGN FOR DESKTOP */
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+/* Standard Desktops (1441px to 1920px) */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Styles for standard desktops */
+}
+
+/* Large Desktops (1921px and above) */
+@media only screen and (min-width: 1921px) {
+  /* Styles for large desktops */
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* END FOR RESPONSIVE DESIGN FOR DESKTOP */
+/* ///////////////////////////////////////////////////////////// */
 
