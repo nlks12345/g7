@@ -47,8 +47,6 @@ footer {
   
 }
 
-
-
 #services_main {
   background-color: #bfddca;
 }
@@ -56,11 +54,6 @@ footer {
 .btn-more-service:hover {
   color: white;
   background-color: #2f5667;
-}
-
-.feature-img {
-  transition: transform 0.3s ease, border 0.3s ease; /* Add smooth transition for the border */
-  border: 5px solid transparent; /* Initial border with no color */
 }
 
 .feature-img:hover {
@@ -94,6 +87,7 @@ footer {
 .main-card {
   margin: 50px;
   border: none;
+  text-align: center;
 }
 
 .main-carousel .carousel-inner .carousel-item > img{
@@ -121,15 +115,14 @@ footer {
 }
 
 
-/* Fade In Down */
-
 /* Basic Styling for Feature Images */
 .feature-img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border: 2px solid #ddd;
-  transition: transform 0.3s ease;
+  /* border: 2px solid #ddd; */
+  transition: transform 0.3s ease, border 0.3s ease; /* Add smooth transition for the border */
+  border: 5px solid transparent; /* Initial border with no color */
 }
 
 .feature-title {
@@ -142,21 +135,6 @@ footer {
   color: #555;
 }
 
-/* Fade-In-Down Animation */
-@keyframes fadeInDown {
-  from {
-      transform: translateY(-20px);
-      opacity: 0;
-  }
-  to {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-.fade-in-down {
-  animation: fadeInDown 1s ease forwards;
-}
 
 
 /* Hero Contain */
@@ -196,10 +174,10 @@ footer {
 }
 
 /* Services Section */
-.services-section img {
+/* .services-section img {
   width: 200px;
   height: 200px;
-}
+} */
 
 
 
@@ -272,19 +250,9 @@ footer {
 }
 
 .navbar.scrolled {
-  /* background-color: #87a59e;  */
-  /* background: linear-gradient(180deg, #87a59e, #d1ebe5); */
-
   background: linear-gradient(180deg, #87a59e, #bfddca);
-
-
-  /* background: linear-gradient(180deg, #bfddca 0%, #87a59e 25%,#87a59e 50%, #87a59e 75%,#bfddca 100%); */
-
-  /* background: linear-gradient(45deg, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); */
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
-
 
 .navbar .nav-links {
   list-style: none;
@@ -348,14 +316,23 @@ footer {
 }
 
 .map-iframe{
-  width:"700";
-  height:"350";
+  width:700px;
+  height:350px;
+}
+
+#whatsapp-button {
+  display: inline-block;
+  margin-top: 1rem; /* Add spacing for the button */
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000;
 }
 
 /* Custom Media Queries */
 @media (max-width: 991.98px) {
   .navbar {
-    height: auto; /* Allow flexible height on smaller screens */
+    height: 150px; /* Allow flexible height on smaller screens */
   }
 
   .navbar-collapse {
@@ -372,7 +349,7 @@ footer {
     margin-bottom: 1rem; /* Space between items */
   }
 
-  .whatsapp-button {
+  #whatsapp-button {
     display: inline-block;
     margin-top: 1rem; /* Add spacing for the button */
     position: fixed; 
@@ -383,6 +360,10 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+
+  .navbar {
+    height: 150px; /* Allow flexible height on smaller screens */
+  }
   .nav-whatsapp-button{
     display: none;
   }
@@ -417,15 +398,24 @@ footer {
 /* Adjustments for screens with a max width of 430px */
 
 @media (max-width: 430px) {
+  
+  .feature-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .service-mobile {
+    display: none;
+  }
 
   .map-container{
-    width: 100vw;
+    width: 375px;
     height: 300px;
   }
 
   .map-iframe{
-    width:90vw;
-    height:300px;
+    width: 100%;
+    height: 300px;
   }
 
   .nav-whatsapp-button{
@@ -438,8 +428,13 @@ footer {
 
   /* Navbar */
   .navbar {
-      font-size: 0.9rem; /* Slightly smaller text size */
-      padding: 0.5rem 1rem; /* Reduce padding */
+    height: 100px;
+    font-size: 0.9rem; /* Slightly smaller text size */
+      /*padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar .navbar.scrolled{
+    height: 150px;
   }
 
   .navbar-brand img {
@@ -464,22 +459,34 @@ footer {
 
   /* WhatsApp Button */
   #whatsapp-button {
-      font-size: 12px; /* Smaller text */
-      padding: 6px 12px; /* Reduce button padding */
-      display: block; /* Ensure the button stays visible */
-      width: 100%; /* Full-width button for better usability */
-      margin: 0.5rem auto; /* Add margin for spacing */
-      position: fixed; 
-      bottom: 20px; 
-      right: 20px; 
-      z-index: 1000;
+    font-size: 12px; /* Smaller text */
+    padding: 6px 12px; /* Reduce button padding */
+    display: block; /* Ensure the button stays visible */
+    width: 100%; /* Full-width button for better usability */
+    margin: 0.5rem auto; /* Add margin for spacing */
+    position: fixed; 
+    bottom: 100px; 
+    right: 50px; 
+    z-index: 1000;
+    text-align: right;
   }
+
+  .main-carousel .carousel-inner .carousel-item > img{
+    height: 300px;
+    width: auto;
+}
 
   /* Hero Section */
   .main-header {
-      height: auto; /* Allow hero section to adjust dynamically */
-      padding: 2rem 0; /* Add padding for better layout */
+      height: 300px; /* Allow hero section to adjust dynamically */
+      /*padding: 2rem 0; /* Add padding for better layout */
   }
+
+  .main-about {
+    background-image: url('assets/images/main_about.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
   .hero h1 {
       font-size: 2rem; /* Reduce heading size */
