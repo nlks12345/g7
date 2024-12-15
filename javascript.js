@@ -18,63 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// FOR ANIMATION
-//Carousel
-// document.addEventListener("DOMContentLoaded", function() {
-//     const carousel = document.querySelector('.carousel');
-//     if (carousel) {
-//         carousel.classList.add('roll-in');
-//     }
-// });
-
-
-//Services
-// document.addEventListener("DOMContentLoaded", () => {
-//     const servicesSection = document.getElementById("services");
-//     servicesSection.classList.remove("hidden");
-//     servicesSection.classList.add("visible");
-//   }); 
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const section = document.getElementById("services");
-  
-//     const observer = new IntersectionObserver(
-//       (entries, observer) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting) {
-//             section.classList.add("visible");
-//             section.classList.remove("hidden");
-//             observer.unobserve(section); // Stop observing after animation
-//           }
-//         });
-//       },
-//       {
-//         threshold: 0.2, // Trigger when 20% of the section is visible
-//       }
-//     );
-  
-//     observer.observe(section);
-//   });
-
-
-
-// ROLL IN RIGHT
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const mapContainer = document.querySelector(".map-container");
-//     const observer = new IntersectionObserver((entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add("roll-in");
-//             }
-//         });
-//     }, { threshold: 0.5 });
-
-//     observer.observe(mapContainer);
-// });
-
-
-
 /* FOR HOME NAVBAR & HERO BACKGORUND */
 document.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
@@ -90,7 +33,7 @@ document.addEventListener("scroll", function () {
 
 /* PAGINATION JS */
 document.addEventListener("DOMContentLoaded", () => {
-    const teamMembers = document.querySelectorAll('.team .member'); // Select all members
+    const teamMembers = document.querySelectorAll('.service-list .service-item'); // Select all members
     const membersPerPage = 5; // Number of members per page
     const totalPages = Math.ceil(teamMembers.length / membersPerPage); // Calculate total pages
     const paginationContainer = document.querySelector('.pagination'); // Select the pagination container
@@ -114,6 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         updatePaginationControls(page);
+
+        const scrollElement = document.getElementById('service_list');
+        if (scrollElement) {
+          scrollElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+        }
     }
 
     // Function to create and update pagination controls

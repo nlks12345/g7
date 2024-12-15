@@ -49,16 +49,16 @@
                             <a class="nav-link  color-teal" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  color-teal" href="#">Contact</a>
+                            <a class="nav-link  color-teal" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank" style="text-decoration: none;">
-                    <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
-                      Chat with Us
-                    </button>
-                  </a>
+                <a class="nav-whatsapp-button" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
+                  <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+                    Chat with Us
+                  </button>
+                </a>
             </div>
         </nav>
 
@@ -74,21 +74,66 @@
 
     <!-- Team Section -->
     <section id="team" class="py-5">
-        <div class="col-12 text-center pb-5">
-            <h1>Our Team</h1>
-        </div>
+      <div class="col-12 text-center pb-5">
+        <h1>Our Team</h1>
+      </div>
 
-        <div class="container container-team">
-            <!-- <h2 class="text-center mb-4">Our Team!</h2> -->
-                    <!-- <div class="container"> -->
-		        <div id="carousel_team">
-			        <figure><a href="#doctorModal" data-bs-toggle="modal"><img src="assets/images/team/doctor.jpeg" alt=""></a></figure>
-                    <figure><a href="#nurseAModal" data-bs-toggle="modal"><img src="assets/images/team/nursea.jpeg" alt=""></a></figure>
-                    <figure><a href="#nurseBModal" data-bs-toggle="modal"><img src="assets/images/team/nurseb.jpeg" alt=""></a></figure>
-                    <figure><a href="#teamModal" data-bs-toggle="modal"><img src="assets/images/team/team_1.jpeg" alt=""></a></figure>
-		    <!-- </div> -->
-                </div>
+      <div class="container container-team">
+		    <div id="carousel_team">
+			    <figure><a href="#doctorModal" data-bs-toggle="modal"><img src="assets/images/team/doctor.jpeg" alt=""></a></figure>
+          <figure><a href="#nurseAModal" data-bs-toggle="modal"><img src="assets/images/team/nursea.jpeg" alt=""></a></figure>
+          <figure><a href="#nurseBModal" data-bs-toggle="modal"><img src="assets/images/team/nurseb.jpeg" alt=""></a></figure>
+          <figure><a href="#teamModal" data-bs-toggle="modal"><img src="assets/images/team/team_1.jpeg" alt=""></a></figure>
         </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 team-mobile">
+        <div id="teamCarousel" class="carousel slide team-carousel" data-bs-ride="carousel">
+              <!-- Indicators (Optional) -->
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3"></button>
+              </div>
+          
+              <!-- Carousel Content -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <a href="#doctorModal" data-bs-toggle="modal">
+                          <img src="assets/images/team/doctor.jpeg" class="d-block w-100" alt="Slide 1">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                         
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#nurseAModal" data-bs-toggle="modal">
+                      <img src="assets/images/team/nursea.jpeg" class="d-block w-100" alt="Slide 2">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#nurseBModal" data-bs-toggle="modal">
+                      <img src="assets/images/team/nurseb.jpeg" class="d-block w-100" alt="Slide 3">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#teamModal" data-bs-toggle="modal">
+                      <img src="assets/images/team/team_1.jpeg" class="d-block w-100" alt="Slide 4">
+                    </a>
+                  </div>
+
+                  <!-- Carousel Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+        </div>
+      </div>
     </section>
 
     <!-- End of Team Section -->
@@ -96,8 +141,8 @@
 
     <!--  Vision Mision Section -->
     <section id="vision_mission" class="py-5 text-center">
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row col-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div class="card vision-card  fs-sm-4 fs-md-1 fs-lg-1">
                 <div class="card-body">
                     <h2 class="card-title">Vision</h2>
@@ -116,7 +161,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div class="card mission-card fs-sm-4 fs-md-1 fs-lg-1">
                 <div class="card-body">
                     <h2 class="card-title">Mission</h2>
@@ -143,8 +188,8 @@
 
     <!-- Why Choose Us Section -->
     <section id="why" >
-        <div class="row">
-            <div class="col-sm-4">
+        <div class="row why-card-row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div class="card why-card-top">
                 <div class="card-body">
                     <h5 class="card-title card-title-why">Comfortable and Relaxing Environment</h5>
@@ -156,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div class="card why-card-top fs-sm-4 fs-md-1 fs-lg-1">
                 <div class="card-body">
                     <h5 class="card-title card-title-why">Affordable and Transparent Pricing</h5>
@@ -167,7 +212,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card why-card-top">
                   <div class="card-body">
                       <h5 class="card-title card-title-why">Friendly and Passionate Staff</h5>
@@ -185,8 +230,8 @@
             </div>
 
           </div>
-            <div class="row">
-            <div class="col-sm-4">
+          <div class="row why-card-row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div class="card why-card-bottom">
                 <div class="card-body">
                     <h5 class="card-title card-title-why">Highly Skilled and Knowledgeable Professionals</h5>
@@ -197,7 +242,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card why-card-bottom">
                   <div class="card-body">
                       <h5 class="card-title card-title-why">State-of-the-Art Technology</h5>
@@ -208,7 +253,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card why-card-bottom">
                   <div class="card-body">
                       <h5 class="card-title card-title-why">Patient-Centered Care</h5>
@@ -219,7 +264,103 @@
                   </div>
                 </div>
               </div>
-            
+          </div>
+          <!-- Mobile View -->
+          <div class="col-sm-12 col-xs-12 why-mobile">
+            <div id="whyCarousel" class="carousel slide why-carousel" data-bs-ride="carousel">
+                  <!-- Carousel Content -->
+                  <div class="carousel-inner tz-gallery" style="padding: 0!important;">
+                      <div class="carousel-item active">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-top">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">Comfortable and Relaxing Environment</h5>
+                                    <p class="mb-0">
+                                        Our dental clinic is designed with your comfort in mind, 
+                                        offering a calming and welcoming atmosphere to ensure 
+                                        a stress-free experience for all patients.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-top fs-sm-4 fs-md-1 fs-lg-1">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">Affordable and Transparent Pricing</h5>
+                                    <p class="mb-0">
+                                        Enjoy top-quality dental care at reasonable and transparent prices, 
+                                        with no hidden fees. We strive to make oral health accessible for everyone.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-top">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">Friendly and Passionate Staff</h5>
+                                    <p class="mb-0">
+                                      Our team is known for their warmth and genuine care, 
+                                      ensuring every patient feels valued and understood during their visit.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-bottom">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">Highly Skilled and Knowledgeable Professionals</h5>
+                                    <p class="mb-0">
+                                        Benefit from advanced dental expertise and ongoing professional training, 
+                                        ensuring the highest standard of care for your oral health needs.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-bottom">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">State-of-the-Art Technology</h5>
+                                    <p class="mb-0">
+                                      We use the latest dental technology and techniques to deliver precise diagnoses 
+                                      and effective treatments tailored to your needs.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                          <div class="card why-card-bottom">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-why">Patient-Centered Care</h5>
+                                    <p class="mb-0">
+                                      Your satisfaction and well-being are our top priorities. 
+                                      We listen to your concerns and provide personalized treatment plans for optimal results.
+                                    </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+    
+                      <!-- Carousel Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#whyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#whyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+            </div>
           </div>
     </section>
     <!-- End of Why Choose Us Section -->
@@ -283,35 +424,88 @@
             </div>
         
         </div>
+        <div class="col-sm-12 col-xs-12 gallery-mobile">
+          <div id="galleryCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
+                <!-- Carousel Content -->
+                <div class="carousel-inner tz-gallery" style="padding: 0!important;">
+                    <div class="carousel-item active">
+                        <a class="lightbox" href="assets/images/clinic/receiption_big.jpeg">
+                            <img src="assets/images/clinic/receiption_big.jpeg" class="d-block w-100" alt="Slide 1">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/clinic/rest.jpeg">
+                        <img src="assets/images/clinic/rest.jpeg" class="d-block w-100" alt="Slide 2">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/clinic/waiting_1.jpeg">
+                        <img src="assets/images/clinic/waiting_1.jpeg" class="d-block w-100" alt="Slide 3">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/dental/waiting_2.jpeg">
+                        <img src="assets/images/dental/waiting_2.jpeg" class="d-block w-100" alt="Slide 4">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/clinic/receiption_angle.jpeg">
+                        <img src="assets/images/clinic/receiption_angle.jpeg" class="d-block w-100" alt="Slide 4">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/clinic/wall_1.jpeg">
+                        <img src="assets/images/clinic/wall_1.jpeg" class="d-block w-100" alt="Slide 4">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="lightbox" href="assets/images/clinic/wall_2.jpeg">
+                        <img src="assets/images/clinic/wall_2.jpeg" class="d-block w-100" alt="Slide 4">
+                      </a>
+                    </div>
+  
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+          </div>
+        </div>
     </section>
     <!-- End of Gallery Section -->
 
-    <!-- Locaiton Section -->
-    <section id="location" class="py-5">
+     <!-- Locaiton Section -->
+     <section id="location" class="py-5">
       <div class="container">
           <h2 class="text-center mb-4">Locate Us!</h2>
-          <div class="row">
-              <div class="col-4 main-location-contact">
+          <div class="row col-12">
+              <div class="col-md-5 col-sm-12 main-location-contact">
                   <h5 class="text-center mb-3">Contact Details</h2>
-                      <form class="px-4 py-3">
-                          <div class="mb-3">
-                            <label for="exampleDropdownFormEmail1" class="form-label">Email address :</label>
+                      <form class="px-4 py-3 text-center">
+                          <div>
+                            <label for="exampleDropdownFormEmail1" class="form-label color-teal"><b>Email address :</b></label>
                           </div>
                           <div class="mb-3">
                               <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
                           </div>
-                          <div class="mb-3">
-                            <label for="exampleDropdownFormPassword1" class="form-label">Contact Number :</label>
+                          <div>
+                            <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Contact Number :</b></label>
                           </div>
                           <div class="mb-3">
                               <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
                           </div>
-                          <div class="mb-3">
-                              <label for="exampleDropdownFormPassword1" class="form-label"> Dental Address :</label>
+                          <div>
+                              <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Dental Address :</b></label>
                             </div>
                             <div class="mb-3">
-                              <p>So Smile Dental (Bayan Baru) - google/waze</p>
-                              <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
+                                <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
                             </div>
                         </form>
                         <div class="row justify-content-center">
@@ -337,11 +531,9 @@
                           </div>
                         </div>
               </div>
-              <div class="col-8 py-5">
-                  <div class="map-container" style="width: 80%; height: 400px;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy" 
-                          width="700" 
-                          height="350" 
+              <div class="col-md-7 col-sm-12 py-5">
+                  <div class="map-container">
+                      <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy"
                           style="border:0;" 
                           allowfullscreen="" 
                           loading="lazy" 
@@ -431,11 +623,11 @@
     </div>
     <!-- END For MODAL -->
 
-    <div id="whatsapp-button" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-        <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
-        </a>
-      </div>
+    <div id="whatsapp-button">
+      <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
+      </a>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 color-teal">

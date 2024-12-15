@@ -46,16 +46,16 @@
                         <a class="nav-link  color-teal" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  color-teal" href="#">Contact</a>
+                        <a class="nav-link  color-teal" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank" style="text-decoration: none;">
+            <a class="nav-whatsapp-button" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
                 <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
                   Chat with Us
                 </button>
-              </a>
+            </a>
         </div>
     </nav>
 
@@ -73,7 +73,7 @@
 
     <section id="services">
         <div class="content justify-content-center">
-            <ul class="team">
+            <ul class="service-list" id="service_list">
                 <!-- <li class="member co-funder">
                     <div class="thumb"><img src="https://assets.codepen.io/3/internal/avatars/users/default.png?fit=crop&format=auto&height=120&width=120"></div>
                     <div class="description">
@@ -81,7 +81,7 @@
                         <p>Chris is a front-end developer and designer. He writes a bunch of HTML, CSS, and JavaScript and shakes the pom-poms for CodePen.<br><a href="https://codepen.io/chriscoyier/">@chriscoyier</a></p>
                     </div>
                 </li> -->
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/polishing.jpeg"></div>
                     <div class="description">
                         <h3>Scaling & Polishing</h3>
@@ -91,7 +91,7 @@
                             <a href="https://codepen.io/chriscoyier/">@chriscoyier</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/aesthetic.jpeg"></div>
                     <div class="description">
                         <h3>Aesthetic Filling</h3>
@@ -100,7 +100,7 @@
                             <a href="https://codepen.io/quezo/">@quezo</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/filling.jpeg"></div>
                     <div class="description">
                         <h3>Filling</h3>
@@ -109,7 +109,7 @@
                             <a href="https://codepen.io/mariemosley/">@mariemosley</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/crown.jpeg"></div>
                     <div class="description">
                         <h3>Crown & Bridge</h3>
@@ -119,7 +119,7 @@
                             <a href="https://codepen.io/shshaw/">@shshaw</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/veneer.jpeg"></div>
                     <div class="description">
                         <h3>Veneers</h3>
@@ -128,7 +128,7 @@
                             <a href="https://codepen.io/rachsmith/">@rachsmith</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/rootcanal.jpeg"></div>
                     <div class="description">
                         <h3>Root Canal Treatment</h3>
@@ -137,7 +137,7 @@
                             <a href="https://codepen.io/broofa/">@broofa</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/wisdom.jpeg"></div>
                     <div class="description">
                         <h3>Wisdom Tooth Surgery</h3>
@@ -146,7 +146,7 @@
                              <a href="https://codepen.io/deequez/">@deequez</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/braces.jpeg"></div>
                     <div class="description">
                         <h3>Braces</h3>
@@ -156,7 +156,7 @@
                             <a href="https://codepen.io/deequez/">@deequez</a></p>
                     </div>
                 </li>
-                <li class="member">
+                <li class="service-item">
                     <div class="thumb"><img src="assets/images/services_new/implant.jpeg"></div>
                     <div class="description">
                         <h3>Implant</h3>
@@ -223,32 +223,31 @@
     </section> -->
 
 
-     <!-- Locaiton Section -->
-     <section id="location" class="py-5">
+      <!-- Locaiton Section -->
+      <section id="location" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Locate Us!</h2>
-            <div class="row">
-                <div class="col-4 main-location-contact">
+            <div class="row col-12">
+                <div class="col-md-5 col-sm-12 main-location-contact">
                     <h5 class="text-center mb-3">Contact Details</h2>
-                        <form class="px-4 py-3">
-                            <div class="mb-3">
-                              <label for="exampleDropdownFormEmail1" class="form-label">Email address :</label>
+                        <form class="px-4 py-3 text-center">
+                            <div>
+                              <label for="exampleDropdownFormEmail1" class="form-label color-teal"><b>Email address :</b></label>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
                             </div>
-                            <div class="mb-3">
-                              <label for="exampleDropdownFormPassword1" class="form-label">Contact Number :</label>
+                            <div>
+                              <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Contact Number :</b></label>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleDropdownFormPassword1" class="form-label"> Dental Address :</label>
+                            <div>
+                                <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Dental Address :</b></label>
                               </div>
                               <div class="mb-3">
-                                <p>So Smile Dental (Bayan Baru) - google/waze</p>
-                                <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
+                                  <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
                               </div>
                           </form>
                           <div class="row justify-content-center">
@@ -274,11 +273,9 @@
                             </div>
                           </div>
                 </div>
-                <div class="col-8 py-5">
-                    <div class="map-container" style="width: 80%; height: 400px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy" 
-                            width="700" 
-                            height="350" 
+                <div class="col-md-7 col-sm-12 py-5">
+                    <div class="map-container">
+                        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy"
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -291,11 +288,11 @@
         </div>
     </section>
 
-    <div id="whatsapp-button" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-        <a href="https://api.whatsapp.com/send?phone=601129223574&text=Hi, I need help!" target="_blank">
+    <div id="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
         </a>
-      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 color-teal">
