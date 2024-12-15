@@ -28,7 +28,7 @@
     <!-- Navigation Bar-->
      <header class="main-header">
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+        <div class="container nav-container">
             <a class="navbar-brand" href="index.html"><img class="main-logo" src="assets/images/logo.png"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,11 +45,11 @@
                         <a class="nav-link  color-teal" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  color-teal" href="#">Contact</a>
+                        <a class="nav-link  color-teal" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
+            <a class="nav-whatsapp-button" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
                 <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
                   Chat with Us
@@ -217,14 +217,14 @@
     
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="p-5">
         <!-- <div class="card main-card"> -->
             <div class="row col-12">
               
-              <div class="col-md-6">
-                    <img src="assets/images/contacusnow1.png" class="d-block main-contact-img" alt="Slide 2">
+              <div class="col-7 col-sm-12">
+                    <img src="assets/images/logo/3.png" class="d-block main-contact-img" alt="Slide 2">
               </div>
-              <div class="col-md-6 main-contact">
+              <div class="col-5 col-sm-12 main-contact">
                 <h2 class="text-center mb-4">Contact Us</h2>
                 <form id="emailForm">
                     <div class="row mb-3 col-12">
@@ -258,8 +258,8 @@
      <section id="location" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Locate Us!</h2>
-            <div class="row">
-                <div class="col-5 main-location-contact">
+            <div class="row col-12">
+                <div class="col-md-5 col-sm-12 main-location-contact">
                     <h5 class="text-center mb-3">Contact Details</h2>
                         <form class="px-4 py-3 text-center">
                             <div class="mb-3">
@@ -304,11 +304,9 @@
                             </div>
                           </div>
                 </div>
-                <div class="col-7 py-5">
-                    <div class="map-container" style="width: 80%; height: 400px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy" 
-                            width="700" 
-                            height="350" 
+                <div class="col-md-7 col-sm-12 py-5">
+                    <div class="map-container">
+                        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy"
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -321,7 +319,7 @@
         </div>
     </section>
 
-    <div id="whatsapp-button" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <div id="whatsapp-button">
         <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
         </a>
@@ -356,13 +354,5 @@
 
     </script>
 
-    <script type="application/ld+json">
-        {
-          "@context" : "https://schema.org",
-          "@type" : "WebSite",
-          "name" : "Example",
-          "url" : "https://example.com/"
-        }
-      </script>
 </body>
 </html>

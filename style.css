@@ -102,8 +102,8 @@ footer {
 }
 
 .main-contact-img {
-  width: 700px;
-  height: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .main-contact {
@@ -252,7 +252,6 @@ footer {
 /* FOR HOME NAVBAR & HERO BACKGORUND */
 /* Navbar */
 
-
 .navbar {
   font-size: x-large;
   font-weight: 500;
@@ -343,8 +342,158 @@ footer {
   font-size: 1.5rem;
 }
 
+.map-container{
+  width: 80%; 
+  height: 400px;
+}
+
+.map-iframe{
+  width:"700";
+  height:"350";
+}
+
+/* Custom Media Queries */
+@media (max-width: 991.98px) {
+  .navbar {
+    height: auto; /* Allow flexible height on smaller screens */
+  }
+
+  .navbar-collapse {
+    background-color: #87a59e; /* Add background for collapsed menu */
+    padding: 1rem; /* Add padding inside the menu */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-bottom: 1rem; /* Space between items */
+  }
+
+  .whatsapp-button {
+    display: inline-block;
+    margin-top: 1rem; /* Add spacing for the button */
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-whatsapp-button{
+    display: none;
+  }
+
+  .map-container{
+    width: 100%;
+    height: auto;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px; /* Further reduce logo size for mobile */
+  }
+
+  #whatsapp-button {
+    font-size: 12px; /* Smaller text for smaller screens */
+    padding: 6px 10px;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000;
+  }
+
+  .nav-whatsapp-button{
+    display: none;
+  }
+  
+  .nav-container {
+    display: inline!important;
+  }
+}
+
+/* Adjustments for screens with a max width of 430px */
+
+@media (max-width: 430px) {
+
+  .map-container{
+    width: 100vw;
+    height: 300px;
+  }
+
+  .map-iframe{
+    width:90vw;
+    height:300px;
+  }
+
+  .nav-whatsapp-button{
+    display: none;
+  }
+  
+  .nav-container {
+    display: inline!important;
+  }
+
+  /* Navbar */
+  .navbar {
+      font-size: 0.9rem; /* Slightly smaller text size */
+      padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar-brand img {
+      max-height: 35px; /* Smaller logo */
+  }
+
+  .navbar-toggler {
+      padding: 0.25rem 0.5rem; /* Adjust toggler button size */
+  }
+
+  .navbar-collapse {
+      padding: 0.5rem; /* Reduce padding inside the dropdown */
+  }
+
+  .nav-item {
+      margin-bottom: 0.75rem; /* Reduced spacing between nav items */
+  }
+
+  .nav-link {
+      font-size: 0.85rem; /* Slightly smaller text size for links */
+  }
+
+  /* WhatsApp Button */
+  #whatsapp-button {
+      font-size: 12px; /* Smaller text */
+      padding: 6px 12px; /* Reduce button padding */
+      display: block; /* Ensure the button stays visible */
+      width: 100%; /* Full-width button for better usability */
+      margin: 0.5rem auto; /* Add margin for spacing */
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      z-index: 1000;
+  }
+
+  /* Hero Section */
+  .main-header {
+      height: auto; /* Allow hero section to adjust dynamically */
+      padding: 2rem 0; /* Add padding for better layout */
+  }
+
+  .hero h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Adjust paragraph text size */
+  }
+}
 
 /* END FOR HOME NAVBAR & HERO BACKGORUND */
+
+
+
 
 #vision_mission {
   /* margin-top: 80px; */
@@ -768,5 +917,10 @@ h2 {
 }
 
 /* End For Service List */
+
+.happ3f-card,
+.contact-contact-card {
+  border: none;
+}
 
 
