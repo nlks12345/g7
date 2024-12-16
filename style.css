@@ -747,6 +747,203 @@ h2 {
 /* Extra Small Phones (Portrait, less than 320px) */
 @media only screen and (max-width: 319px) {
   /* Styles for very small devices */
+
+  /* Home Page */
+  .feature-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .service-mobile {
+    display: none;
+  }
+
+  .map-container{
+    width: 375px;
+    height: 300px;
+  }
+
+  .map-iframe{
+    width: 100%;
+    height: 300px;
+  }
+
+  .nav-whatsapp-button{
+    display: none;
+  }
+  
+  .nav-container {
+    display: inline!important;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 100px;
+    font-size: 0.9rem; /* Slightly smaller text size */
+      /*padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar .navbar.scrolled{
+    height: 150px;
+  }
+
+  .navbar-brand img {
+      max-height: 35px; /* Smaller logo */
+  }
+
+  .navbar-toggler {
+      padding: 0.25rem 0.5rem; /* Adjust toggler button size */
+  }
+
+  .navbar-collapse {
+      padding: 0.5rem; /* Reduce padding inside the dropdown */
+  }
+
+  .nav-item {
+      margin-bottom: 0.75rem; /* Reduced spacing between nav items */
+  }
+
+  .nav-link {
+      font-size: 0.85rem; /* Slightly smaller text size for links */
+  }
+
+  /* WhatsApp Button */
+  #whatsapp-button {
+    font-size: 12px; /* Smaller text */
+    padding: 6px 12px; /* Reduce button padding */
+    display: block; /* Ensure the button stays visible */
+    width: 100%; /* Full-width button for better usability */
+    margin: 0.5rem auto; /* Add margin for spacing */
+    position: fixed; 
+    bottom: 100px; 
+    right: 50px; 
+    z-index: 1000;
+    text-align: right;
+  }
+
+  .main-carousel .carousel-inner .carousel-item > img,
+  .gallery-carousel .carousel-inner .carousel-item > img,
+  .team-carousel .carousel-inner .carousel-item > img
+  {
+    height: 300px;
+    width: auto;
+  }
+
+  /* Hero Section */
+  .main-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+      /*padding: 2rem 0; /* Add padding for better layout */
+  }
+
+  .main-about {
+    background-image: url('assets/images/main_about.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+  .hero h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Adjust paragraph text size */
+  }
+
+  /* End for Home Page */
+
+  /*  */
+  /*  */
+
+  /* About Page */
+
+  /* Header */
+  .about-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Team Gallery */
+  .team-mobile{
+    display: block;
+  }
+
+  .container-team{
+    display: none;
+  }
+
+  .gallery-mobile{
+    display: block;
+  }
+
+  .gallery-container{
+    display: none;
+  }
+
+  /* Vision Mision */
+  .blockquote{
+    font-size: 15px;
+  }
+
+  /* Why card choose us */
+
+  .why-card-row{
+    display: none;
+  }
+
+  .why-card-top {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+  
+  .why-card-bottom {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .why-mobile{
+    display: block;
+  }
+
+  /* End for About Page */
+
+  /*  */
+  /*  */
+  
+  /* Service Page */
+
+    /* Header */
+    .service-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+    }
+
+    /* Service List */
+    .service-item .description > p{
+        font-size: 15px;
+        margin: 0;
+    }
+  /* End for Service Page */
+
+  /*  */
+  /*  */
+
+  /* Contact Page */
+  .contact-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Contact Form */
+  .contact-form{
+    margin-bottom :50px;
+  }
+
+  /* End for Contact Page */
 }
 
 /* Small Phones (320px to 480px) */
@@ -954,6 +1151,202 @@ h2 {
 /* Medium Phones (481px to 600px) */
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   /* Styles for medium-sized phones */
+  /* Home Page */
+  .feature-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .service-mobile {
+    display: none;
+  }
+
+  .map-container{
+    width: 375px;
+    height: 300px;
+  }
+
+  .map-iframe{
+    width: 100%;
+    height: 300px;
+  }
+
+  .nav-whatsapp-button{
+    display: none;
+  }
+  
+  .nav-container {
+    display: inline!important;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 100px;
+    font-size: 0.9rem; /* Slightly smaller text size */
+      /*padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar .navbar.scrolled{
+    height: 150px;
+  }
+
+  .navbar-brand img {
+      max-height: 35px; /* Smaller logo */
+  }
+
+  .navbar-toggler {
+      padding: 0.25rem 0.5rem; /* Adjust toggler button size */
+  }
+
+  .navbar-collapse {
+      padding: 0.5rem; /* Reduce padding inside the dropdown */
+  }
+
+  .nav-item {
+      margin-bottom: 0.75rem; /* Reduced spacing between nav items */
+  }
+
+  .nav-link {
+      font-size: 0.85rem; /* Slightly smaller text size for links */
+  }
+
+  /* WhatsApp Button */
+  #whatsapp-button {
+    font-size: 12px; /* Smaller text */
+    padding: 6px 12px; /* Reduce button padding */
+    display: block; /* Ensure the button stays visible */
+    width: 100%; /* Full-width button for better usability */
+    margin: 0.5rem auto; /* Add margin for spacing */
+    position: fixed; 
+    bottom: 100px; 
+    right: 50px; 
+    z-index: 1000;
+    text-align: right;
+  }
+
+  .main-carousel .carousel-inner .carousel-item > img,
+  .gallery-carousel .carousel-inner .carousel-item > img,
+  .team-carousel .carousel-inner .carousel-item > img
+  {
+    height: 300px;
+    width: auto;
+  }
+
+  /* Hero Section */
+  .main-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+      /*padding: 2rem 0; /* Add padding for better layout */
+  }
+
+  .main-about {
+    background-image: url('assets/images/main_about.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+  .hero h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Adjust paragraph text size */
+  }
+
+  /* End for Home Page */
+
+  /*  */
+  /*  */
+
+  /* About Page */
+
+  /* Header */
+  .about-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Team Gallery */
+  .team-mobile{
+    display: block;
+  }
+
+  .container-team{
+    display: none;
+  }
+
+  .gallery-mobile{
+    display: block;
+  }
+
+  .gallery-container{
+    display: none;
+  }
+
+  /* Vision Mision */
+  .blockquote{
+    font-size: 15px;
+  }
+
+  /* Why card choose us */
+
+  .why-card-row{
+    display: none;
+  }
+
+  .why-card-top {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+  
+  .why-card-bottom {
+    border:none;
+    border-radius: 80px; 
+    border-radius: 80px; 
+    background-color: #bfddca;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .why-mobile{
+    display: block;
+  }
+
+  /* End for About Page */
+
+  /*  */
+  /*  */
+  
+  /* Service Page */
+
+    /* Header */
+    .service-header {
+      height: 300px; /* Allow hero section to adjust dynamically */
+    }
+
+    /* Service List */
+    .service-item .description > p{
+        font-size: 15px;
+        margin: 0;
+    }
+  /* End for Service Page */
+
+  /*  */
+  /*  */
+
+  /* Contact Page */
+  .contact-header {
+    height: 300px; /* Allow hero section to adjust dynamically */
+  }
+
+  /* Contact Form */
+  .contact-form{
+    margin-bottom :50px;
+  }
+
+  /* End for Contact Page */
 }
 
 
