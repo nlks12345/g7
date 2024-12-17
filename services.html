@@ -13,6 +13,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 
@@ -28,40 +30,40 @@
 
     <!-- <div class="content"> -->
     <!-- Navigation Bar-->
-     <header class="service-header">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img class="main-logo" src="assets/images/logo.png"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link color-teal" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link color-teal" href="#service">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  color-teal" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  color-teal" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="nav-whatsapp-button" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
-                <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
-                  Chat with Us
+    <header class="service-header">
+        <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-up">
+            <div class="container nav-container">
+                <a class="navbar-brand" href="index.html"><img class="main-logo" src="assets/images/logo.png"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </a>
-        </div>
-    </nav>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color-teal" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link color-teal" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  color-teal" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  color-teal" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-whatsapp-button" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #2f5667; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+                      Chat with Us
+                    </button>
+                </a>
+            </div>
+        </nav>
 
     <!-- Hero Section -->
-    <section class="pt-5 main-hero">
+    <section class="pt-5 main-hero" data-aos="zoom-out">
         <div>
             <!-- <h1>About Us</h1> -->
             <!-- <p class="lead">Your one-stop solution for web solutions.</p> -->
@@ -82,17 +84,17 @@
                         <p>Chris is a front-end developer and designer. He writes a bunch of HTML, CSS, and JavaScript and shakes the pom-poms for CodePen.<br><a href="https://codepen.io/chriscoyier/">@chriscoyier</a></p>
                     </div>
                 </li> -->
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-up">
                     <div class="thumb"><img src="assets/images/services_new/polishing.jpeg"></div>
                     <div class="description">
                         <h3>Scaling & Polishing</h3>
                         <p>A professional cleaning procedure that removes plaque, tartar, and stains from your teeth, 
                             leaving them smooth, polished, and healthier. 
                             This treatment helps prevent gum disease and keeps your smile fresh and bright.<br>
-                            <a href="https://codepen.io/chriscoyier/">@chriscoyier</a></p>
+                            <!-- <a href="https://codepen.io/chriscoyier/">@chriscoyier</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-down">
                     <div class="thumb"><img src="assets/images/services_new/aesthetic.jpeg"></div>
                     <div class="description">
                         <h3>Aesthetic Filling</h3>
@@ -101,69 +103,69 @@
                             <a href="https://codepen.io/quezo/">@quezo</a></p>
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-up">
                     <div class="thumb"><img src="assets/images/services_new/filling.jpeg"></div>
                     <div class="description">
                         <h3>Filling</h3>
                         <p>A simple and effective solution to repair teeth affected by decay or minor fractures. 
                             Durable materials are used to restore the tooth’s shape, function, and integrity.<br>
-                            <a href="https://codepen.io/mariemosley/">@mariemosley</a></p>
+                            <!-- <a href="https://codepen.io/mariemosley/">@mariemosley</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-down">
                     <div class="thumb"><img src="assets/images/services_new/crown.jpeg"></div>
                     <div class="description">
                         <h3>Crown & Bridge</h3>
                         <p>Regain the functionality and appearance of your teeth with crowns and bridges. 
                             Crowns cover and strengthen damaged teeth, 
                             while bridges replace missing teeth, ensuring a natural and confident smile.<br>
-                            <a href="https://codepen.io/shshaw/">@shshaw</a></p>
+                            <!-- <a href="https://codepen.io/shshaw/">@shshaw</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-up">
                     <div class="thumb"><img src="assets/images/services_new/veneer.jpeg"></div>
                     <div class="description">
                         <h3>Veneers</h3>
                         <p>Transform your smile with custom-made veneers, ultra-thin shells designed to cover imperfections like stains, chips, or gaps. 
                             Achieve a flawless, natural-looking smile with this minimally invasive cosmetic procedure.<br>
-                            <a href="https://codepen.io/rachsmith/">@rachsmith</a></p>
+                            <!-- <a href="https://codepen.io/rachsmith/">@rachsmith</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-down">
                     <div class="thumb"><img src="assets/images/services_new/rootcanal.jpeg"></div>
                     <div class="description">
                         <h3>Root Canal Treatment</h3>
                         <p>Save your natural tooth with root canal therapy. This procedure removes infected pulp, relieves pain, 
                             and restores the tooth's health, ensuring long-term dental stability.<br>
-                            <a href="https://codepen.io/broofa/">@broofa</a></p>
+                            <!-- <a href="https://codepen.io/broofa/">@broofa</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-up">
                     <div class="thumb"><img src="assets/images/services_new/wisdom.jpeg"></div>
                     <div class="description">
                         <h3>Wisdom Tooth Surgery</h3>
                         <p>Safely and effectively remove problematic wisdom teeth with our specialized surgical care.
                              We ensure a comfortable experience while preventing future complications like pain or crowding.<br>
-                             <a href="https://codepen.io/deequez/">@deequez</a></p>
+                             <!-- <a href="https://codepen.io/deequez/">@deequez</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-down">
                     <div class="thumb"><img src="assets/images/services_new/braces.jpeg"></div>
                     <div class="description">
                         <h3>Braces</h3>
                         <p>Achieve a straight and aligned smile with orthodontic braces. 
                             Our options include traditional metal braces or 
                             discreet alternatives like ceramic braces to suit your lifestyle and preferences.<br>
-                            <a href="https://codepen.io/deequez/">@deequez</a></p>
+                            <!-- <a href="https://codepen.io/deequez/">@deequez</a></p> -->
                     </div>
                 </li>
-                <li class="service-item">
+                <li class="service-item" data-aos="flip-up"> 
                     <div class="thumb"><img src="assets/images/services_new/implant.jpeg"></div>
                     <div class="description">
                         <h3>Implant</h3>
                         <p>Restore your smile and confidence with dental implants – a long-lasting solution for missing teeth. 
                             Implants provide a natural look and feel, allowing you to eat, speak, and smile with ease.<br>
-                            <a href="https://codepen.io/deequez/">@deequez</a></p>
+                            <!-- <a href="https://codepen.io/deequez/">@deequez</a></p> -->
                     </div>
                 </li>
             </ul>
@@ -225,7 +227,7 @@
 
 
       <!-- Locaiton Section -->
-      <section id="location" class="py-5">
+     <section id="location" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Locate Us!</h2>
             <div class="row col-12">
@@ -235,46 +237,58 @@
                             <div>
                               <label for="exampleDropdownFormEmail1" class="form-label color-teal"><b>Email address :</b></label>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-down-right">
                                 <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
                             </div>
                             <div>
                               <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Contact Number :</b></label>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-down-left">
                                 <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
                             </div>
                             <div>
                                 <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Dental Address :</b></label>
                               </div>
-                              <div class="mb-3">
+                              <div class="mb-3" data-aos="fade-down-right">
                                   <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
                               </div>
                           </form>
                           <div class="row justify-content-center">
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.facebook.com/profile.php?id=61569323519005" target="_blank">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank">
                                 <i class="fab fa-whatsapp fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.instagram.com/sosmiledental" target="_blank">
                                 <i class="fab fa-instagram fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.tiktok.com/@sosmiledental" target="_blank">
                                 <i class="fab fa-tiktok fa-2x"></i>
                               </a>
                             </div>
                           </div>
                 </div>
-                <div class="col-md-7 col-sm-12 py-5">
+                <div class="col-md-7 col-sm-12 py-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="map-container">
                         <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy"
                             style="border:0;" 
@@ -284,12 +298,11 @@
                         </iframe>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <div id="whatsapp-button">
+    <div id="whatsapp-button" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
         </a>
@@ -306,6 +319,11 @@
     <script src="javascript.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

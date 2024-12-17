@@ -11,6 +11,7 @@
     <title>So Smile Dental</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -30,7 +31,7 @@
     <!-- <div class="content"> -->
     <!-- Navigation Bar-->
      <header class="main-header">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-up">
         <div class="container nav-container">
             <a class="navbar-brand" href="index.html"><img class="main-logo" src="assets/images/logo.png"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +76,7 @@
     <section id="main-slide">
         <div class="card main-card">
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div id="mainCarousel" class="carousel slide main-carousel" data-bs-ride="carousel">
                     <!-- Indicators (Optional) -->
                     <div class="carousel-indicators">
@@ -120,7 +121,7 @@
                     </button>
                 </div>
               </div>
-              <div class="col-md-6 main-about">
+              <div class="col-md-6 main-about" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card-body">
                     <h5 class="card-title">About Us</h5>
                     <p class="card-text">Welcome to So Smile, 
@@ -180,39 +181,42 @@
             <h2 class="text-center mb-4">Services</h2>
             <div class="row text-center">
                 <!-- First Row -->
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4" data-aos="zoom-in-up">
                     <img src="assets/images/services_new/braces.jpeg" alt="Feature Six" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Braces</h3>
                     <p class="feature-text">Straighten teeth and improve oral health with modern orthodontic braces.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4" data-aos="zoom-in-up">
                     <img src="assets/images/services_new/polishing.jpeg" alt="Feature One" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Scaling & Polishing</h3>
                     <p class="feature-text">Keep your teeth clean and gums healthy with professional scaling and polishing.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4" data-aos="zoom-in-up">
                     <img src="assets/images/services_new/rootcanal.jpeg" alt="Feature Two" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Root Canal Treatment</h3>
                     <p class="feature-text">Save infected teeth with precise and painless root canal therapy.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile">
+                
+
+                <!-- Second Row with Fade-In-Down Animation -->
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile" data-aos="zoom-in-down">
                     <img src="assets/images/services_new/implant.jpeg" alt="Feature Three" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Implant</h3>
                     <p class="feature-text">Permanent tooth replacement with natural aesthetics and functionality.</p>
                 </div>
-
-                <!-- Second Row with Fade-In-Down Animation -->
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile" data-aos="zoom-in-down">
                     <img src="assets/images/services_new/veneer.jpeg" alt="Feature Four" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Veneers</h3>
                     <p class="feature-text">Transform your smile with custom-designed, natural-looking veneers.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile">
+                <div class="col-lg-4 col-md-4 col-sm-4 mb-4 service-mobile" data-aos="zoom-in-down">
                     <img src="assets/images/services_new/crown.jpeg" alt="Feature Five" class="rounded-circle img-fluid mb-3 feature-img">
                     <h3 class="feature-title">Crown & Bridge</h3>
                     <p class="feature-text">Restore damaged or missing teeth with durable crowns and bridges.</p>
                 </div>
-                <div class="col-lg12 col-md-12 col-sm-4 mb-12 my-5" >
+
+                <!-- Button See more Service -->
+                <div class="col-lg12 col-md-12 col-sm-4 mb-12 my-5" data-aos="zoom-in-down">
                     <a type="button" href="services.html" class="btn btn-more-service" style="background-color: transparent; color: #2f5667; border: 2px solid;">More Services</a>
                 </div>
             </div>
@@ -226,12 +230,12 @@
         <!-- <div class="card main-card"> -->
             <div class="row col-md-12">
               
-              <div class="col-lg-7 col-md-7 col-sm-12">
-                    <img src="assets/images/logo/3.png" class="d-block main-contact-img" alt="Slide 2">
+              <div class="col-lg-7 col-md-7 col-sm-12 main-smile-img" data-aos="zoom-out-right">
+                    <img src="assets/images/logo/3_bg.png" class="d-block main-contact-img" alt="Slide 2">
               </div>
-              <div class="col-lg-5 col-md-5 col-sm-12 main-contact">
+              <div class="col-lg-5 col-md-5 col-sm-12 main-contact" data-aos="zoom-out-left">
                 <h2 class="text-center mb-4">Contact Us</h2>
-                <form id="emailForm">
+                <form id="emailForm" class="m-3">
                     <div class="row mb-3 col-12">
                         <div class="col-6">
                             <label for="name" class="form-label col-3">Name</label>
@@ -270,46 +274,58 @@
                             <div>
                               <label for="exampleDropdownFormEmail1" class="form-label color-teal"><b>Email address :</b></label>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-down-right">
                                 <label for="exampleDropdownFormEmail1" class="form-label">sosmiledental@gmail.com</label>
                             </div>
                             <div>
                               <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Contact Number :</b></label>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-down-left">
                                 <label for="exampleDropdownFormPassword1" class="form-label">+6011-59318188</label>
                             </div>
                             <div>
                                 <label for="exampleDropdownFormPassword1" class="form-label color-teal"><b>Dental Address :</b></label>
                               </div>
-                              <div class="mb-3">
+                              <div class="mb-3" data-aos="fade-down-right">
                                   <p>102,1st floor Jalan Mayang Pasir 2 Bandar Bayan Baru, Bayan Baru, 11950, Penang</p>
                               </div>
                           </form>
                           <div class="row justify-content-center">
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.facebook.com/profile.php?id=61569323519005" target="_blank">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need a dental services." target="_blank">
                                 <i class="fab fa-whatsapp fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.instagram.com/sosmiledental" target="_blank">
                                 <i class="fab fa-instagram fa-2x"></i>
                               </a>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500">
                               <a class="social-logo" href="https://www.tiktok.com/@sosmiledental" target="_blank">
                                 <i class="fab fa-tiktok fa-2x"></i>
                               </a>
                             </div>
                           </div>
                 </div>
-                <div class="col-md-7 col-sm-12 py-5">
+                <div class="col-md-7 col-sm-12 py-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="map-container">
                         <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15890.37174137661!2d100.2862618!3d5.3260092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac1003a9be24d%3A0x87ea0edf5353ea9!2sSO%20SMILE%20DENTAL%20(BAYAN%20BARU)!5e0!3m2!1sms!2smy!4v1732615881604!5m2!1sms!2smy"
                             style="border:0;" 
@@ -319,12 +335,11 @@
                         </iframe>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <div id="whatsapp-button">
+    <div id="whatsapp-button" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <a href="https://api.whatsapp.com/send?phone=601159318188&text=Hi, I need help!" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
         </a>
@@ -344,10 +359,11 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         baguetteBox.run('.tz-gallery');
+        AOS.init();
     </script>
-
 </body>
 </html>
