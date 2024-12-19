@@ -49,6 +49,68 @@ footer {
   
 }
 
+/* //////////////////////////////////////////// */
+/* /////////////////////////////////////////////////FOR HOME PAGE ////////////////////////////*/
+/* ////////////////////////////////////////////// */
+
+/* /////////////////////////////// Review Card //////////////////////////////// */
+#reviews_section {
+  background-color: #bfddca;
+}
+
+.btn-see-more-review {
+  background-color: #2f5667;
+  color: #fff;
+}
+
+.review-control-prev{
+  left: -125px;
+}
+.review-control-next {
+  right: -125px;
+}
+
+/* Review Card Styles */
+.review-card {
+  /* margin: 10px; */
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Author and Image */
+.review-author-image {
+  border: 2px solid #87a59e;
+}
+
+/* Text Styles */
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Short text display */
+.short-text {
+  display: inline;
+}
+
+/* Smooth expand/collapse transition */
+.review-text.expandable {
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* /////////////////////////////// End for Review Card //////////////////////////////// */
+
+
 #services_main {
   background-color: #bfddca;
 }
@@ -342,7 +404,9 @@ footer {
 
 /* 430px */
 
-
+/* //////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// END FOR HOME PAGE ////////////////////////////*/
+/* ////////////////////////////////////////////// */
 
 #vision_mission {
   /* margin-top: 80px; */
@@ -841,7 +905,11 @@ h2 {
   }
   
   .nav-container {
-    display: inline!important;
+    max-width: 300px!important;
+  }
+
+  .main-logo {
+    width: 200px;
   }
 
   /* Navbar */
@@ -1042,9 +1110,12 @@ h2 {
   }
   
   .nav-container {
-    display: inline!important;
+    max-width: 300px!important;
   }
 
+  .main-logo {
+    width: 200px;
+  }
   /* Navbar */
   .navbar {
     height: 100px;
@@ -1062,6 +1133,11 @@ h2 {
 
   .navbar-toggler {
       padding: 0.25rem 0.5rem; /* Adjust toggler button size */
+  }
+
+  .navbar .collapse.show {
+    background-color: #bfddca; /* Background color for the toggled menu */
+    opacity: 0.7;
   }
 
   .navbar-collapse {
@@ -1244,7 +1320,11 @@ h2 {
   }
   
   .nav-container {
-    display: inline!important;
+    max-width: 300px!important;
+  }
+
+  .main-logo {
+    width: 200px;
   }
 
   /* Navbar */
