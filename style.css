@@ -19,10 +19,6 @@ footer {
     /* background-color: rgba(135, 165, 158, 1); */
     /* background: linear-gradient(360deg,#87a59e, #d1ebe5); */
     background: linear-gradient(360deg,#87a59e, #bfddca);
-
-
-    
-
     /* background: linear-gradient(360deg, #87a59e 50%, #bfddca 40%,#d1ebe5 10%); */
 
 }
@@ -31,6 +27,26 @@ footer {
   width: 250px;
 }
 
+#doctorModal .modal-content{
+  background-color: #fbfaf8;
+  background-image: url('assets/images/modal_bg.png');
+  /* background-size: cover; */
+  background-repeat: no-repeat; /* Avoid repeating */
+  background-position: center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/modal_bg.png'); */
+}
+
+#promoModal .modal-header ,
+#promoModal .modal-footer {
+  border: none;
+  justify-content: space-between;
+}
+
+#doctorModal .modal-header ,
+#doctorModal .modal-footer {
+  border: none;
+  justify-content: space-between;
+}
 
 /*.carousel-item img {
   width: 100%; /* Ensures the image spans the full width of the carousel */
@@ -880,6 +896,14 @@ h2 {
 @media only screen and (max-width: 319px) {
   /* Styles for very small devices */
 
+  .modal-content{
+    max-width: 500px;
+  }
+
+  .carousel-caption{
+    right: 15% !important;
+  }
+
   /* Home Page */
   .feature-img {
     height: 150px;
@@ -1084,6 +1108,10 @@ h2 {
 
 /* Small Phones (320px to 480px) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .modal-content{
+    max-width: 500px;
+  }
 
   /* Home Page */
   .feature-img {
@@ -1295,6 +1323,11 @@ h2 {
 /* Medium Phones (481px to 600px) */
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   /* Styles for medium-sized phones */
+
+  .modal-content{
+    max-width: 250px;
+  }
+
   /* Home Page */
   .feature-img {
     height: 150px;

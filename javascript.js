@@ -112,74 +112,53 @@ document.addEventListener("DOMContentLoaded", () => {
 /* END FOR PAGINATION JS */
 
 
-/* FOR Google Review function */
-
-function initReviews() {
-  const service = new google.maps.places.PlacesService(document.createElement("div"));
-
-  const reviewsContainer = document.getElementById("reviewsContainer");
 
 
-  service.getDetails(
-    {
-      placeId: "ChIJTeKbOgDBSjARqT419e2gfgg", // Replace with your Place ID
-      fields: ["name", "rating", "reviews", "url"],
-    },
-    (place, status) => {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        
-        const reviews = place.reviews;
+// IDLE POP OUT
 
-      for (let i = 0; i < reviews.length; i += 3) {
-        const carouselItem = document.createElement("div");
-        carouselItem.className = `carousel-item ${i === 0 ? "active" : ""}`; // First slide is active
 
-        const row = document.createElement("div");
-        row.className = "row";
+let idleTime = 0; // Tracks idle time
+const idleLimit = 60; // Idle time limit in seconds
 
-    // Add up to 3 reviews per slide
-    for (let j = i; j < i + 3 && j < reviews.length; j++) {
-      const review = reviews[j];
-
-      const col = document.createElement("div");
-      col.className = "col-md-4"; // Bootstrap column
-
-      col.innerHTML = `
-        <div class="review-card p-3 border rounded">
-          <div class="review-header d-flex align-items-center mb-3">
-            <img class="review-author-image rounded-circle me-3" src="${review.profile_photo_url}" alt="${review.author_name}" width="50" height="50" />
-            <div>
-              <h3 class="review-author mb-0">${review.author_name}</h3>
-              <p class="review-rating mb-0">${"⭐".repeat(review.rating)}</p>
-            </div>
-          </div>
-          <p class="review-text expandable">${review.text}
-          </p>
-          <p class="review-date text-muted">${new Date(review.time * 1000).toLocaleDateString()}               
-          <a href="${place.url}" target="_blank" class="btn btn-see-more-review">
-              See More
-            </a>         
-             </p>
-        </div>
-      `;
-
-      row.appendChild(col);
-    }
-
-    carouselItem.appendChild(row);
-    reviewsContainer.appendChild(carouselItem);
-  }
-        
-      } else {
-        console.error("Error fetching reviews:", status);
-      }
-    }
-  );
+function showPromoPopup() {
+  const promoModal = new bootstrap.Modal(document.getElementById("promoModal"));
+  promoModal.show();
 }
 
-// Initialize reviews on page load
-window.onload = initReviews;
+// Show popup on page load
+window.addEventListener("load", () => {
+  showPromoPopup(); // Display the modal on page load
+});
 
+// Increment idle time every second
+const idleInterval = setInterval(() => {
+  idleTime++;
+  if (idleTime >= idleLimit) {
+    showPromoPopup();
+    idleTime = 0; // Reset idle time to allow the popup to reappear after another idle period
+  }
+}, 1000);
 
+// Reset idle time on user activity
+// function resetIdleTime() {
+//   idleTime = 0;
+// }
+
+function resetIdleTimer() {
+  clearTimeout(idleTimeout);
+  idleTimeout = setTimeout(() => {
+      showPopup();
+  }, 10000); // Example: 5 seconds
+}
+
+window.addEventListener("mousemove", resetIdleTime);
+window.addEventListener("keydown", resetIdleTime);
+window.addEventListener("scroll", resetIdleTime);
+window.addEventListener("touchstart", resetIdleTime);
+['mousemove', 'keydown', 'scroll', 'click'].forEach((event) => {
+  document.addEventListener(event, resetIdleTimer);
+});
+
+resetIdleTimer();
 
 /* */
