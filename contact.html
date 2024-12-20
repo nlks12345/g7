@@ -74,10 +74,12 @@
 
     <!-- Contact Section -->
     <section id="contact" class="">
+        <div id="contactAlertContainer"></div>
+
             <div class="row m-5">
                 <!-- <h2 class="text-center mb-4">Contact Us</h2> -->
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <form class="contact-form">
+                <form id="contactEmailForm" class="contact-form">
                     <div class="row mb-3 col-12">
                         <div class="col-6">
                             <label for="name" class="form-label col-3">Name</label>
@@ -372,6 +374,68 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        // EMAIL JS //
+        // emailjs.init("x252OMw2BYcceMKG6"); // Replace with your actual EmailJS public key
+
+        (function(){
+            emailjs.init({
+                publicKey: "x252OMw2BYcceMKG6",
+            });
+        })();
+
+        document.getElementById("contactEmailForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById("name").value,
+                to_name: 'So Smile Dental',
+                from_email: document.getElementById("email").value,
+                email: 'nicklim128@gmail.com',
+                contact: document.getElementById("contact_no").value,
+                message: document.getElementById("message").value,
+                reply_to: "sosmiledental@gmail.com"
+            };
+
+            emailjs
+            .send("service_a1fhrfi", "template_acza1a5", templateParams)
+            .then(
+                (response) => {
+                    // console.log("SUCCESS!", response.status, response.text);
+                    //   alert("Email sent successfully!");
+                    showAlert("success", "Email sent successfully! Thank you for reaching out.");
+
+                },
+                (error) => {
+                    // console.error("FAILED...", error);
+                    //   alert("Failed to send email.");
+                    showAlert("danger", "Failed to send email. Please try again later.");
+                }
+            );
+        });
+
+
+        // Function to Show Bootstrap Alert
+        function showAlert(type, message) {
+            const alertContainer = document.getElementById("contactAlertContainer");
+
+            // Clear Existing Alerts
+            alertContainer.innerHTML = "";
+
+            // Create Alert Element
+            const alert = document.createElement("div");
+            alert.className = `alert alert-${type} alert-dismissible fade show text-center`;
+            alert.role = "alert";
+            alert.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+
+            // Append Alert to Container
+            alertContainer.appendChild(alert);
+        }
+        // END OF EMAIL JS //
     </script>
 
 </body>

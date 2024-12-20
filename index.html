@@ -228,9 +228,10 @@
 
     <!-- Contact Section -->
     <section id="contact" class="p-5">
+        <div id="alertContainer"></div>
+
         <!-- <div class="card main-card"> -->
             <div class="row col-md-12">
-              
               <div class="col-lg-7 col-md-7 col-sm-12 main-smile-img" data-aos="zoom-out-right">
                     <img src="assets/images/logo/3_bg.png" class="d-block main-contact-img" alt="Slide 2">
               </div>
@@ -444,112 +445,130 @@
     </script>
     <script>
         /* FOR Google Review function */
+        function initReviews() {
+            const service = new google.maps.places.PlacesService(document.createElement("div"));
+            const reviewsContainer = document.getElementById("reviewsContainer");
 
-function initReviews() {
-  const service = new google.maps.places.PlacesService(document.createElement("div"));
-
-  const reviewsContainer = document.getElementById("reviewsContainer");
-
-
-  service.getDetails(
-    {
-      placeId: "ChIJTeKbOgDBSjARqT419e2gfgg", // Replace with your Place ID
-      fields: ["name", "rating", "reviews", "url"],
-    },
-    (place, status) => {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
+            service.getDetails(
+            {
+                placeId: "ChIJTeKbOgDBSjARqT419e2gfgg", // Replace with your Place ID
+                fields: ["name", "rating", "reviews", "url"],
+            },
+            (place, status) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
         
-        const reviews = place.reviews;
+                const reviews = place.reviews;
 
-      for (let i = 0; i < reviews.length; i += 3) {
-        const carouselItem = document.createElement("div");
-        carouselItem.className = `carousel-item ${i === 0 ? "active" : ""}`; // First slide is active
+                for (let i = 0; i < reviews.length; i += 3) {
+                    const carouselItem = document.createElement("div");
+                    carouselItem.className = `carousel-item ${i === 0 ? "active" : ""}`; // First slide is active
 
-        const row = document.createElement("div");
-        row.className = "row";
+                    const row = document.createElement("div");
+                    row.className = "row";
 
-    // Add up to 3 reviews per slide
-    for (let j = i; j < i + 3 && j < reviews.length; j++) {
-      const review = reviews[j];
+                    // Add up to 3 reviews per slide
+                    for (let j = i; j < i + 3 && j < reviews.length; j++) {
+                        const review = reviews[j];
+                        const col = document.createElement("div");
+                        col.className = "col-md-4 col-12"; // Bootstrap column
 
-      const col = document.createElement("div");
-      col.className = "col-md-4 col-12"; // Bootstrap column
+                        col.innerHTML = `
+                            <div class="review-card p-3 border rounded">
+                                <div class="review-header d-flex align-items-center mb-3">
+                                    <img class="review-author-image rounded-circle me-3" src="${review.profile_photo_url}" alt="${review.author_name}" width="50" height="50" />
+                                <div>
+                                <h3 class="review-author mb-0">${review.author_name}</h3>
+                                <p class="review-rating mb-0">${"⭐".repeat(review.rating)}</p>
+                            </div>
+                        </div>
+                        <p class="review-text expandable">${review.text}</p>
+                        <p class="review-date text-muted">${new Date(review.time * 1000).toLocaleDateString()}               
+                        <a href="${place.url}" target="_blank" class="btn btn-see-more-review">
+                            See More
+                        </a>         
+                        </p>
+                        </div>
+                        `;
 
-      col.innerHTML = `
-        <div class="review-card p-3 border rounded">
-          <div class="review-header d-flex align-items-center mb-3">
-            <img class="review-author-image rounded-circle me-3" src="${review.profile_photo_url}" alt="${review.author_name}" width="50" height="50" />
-            <div>
-              <h3 class="review-author mb-0">${review.author_name}</h3>
-              <p class="review-rating mb-0">${"⭐".repeat(review.rating)}</p>
-            </div>
-          </div>
-          <p class="review-text expandable">${review.text}
-          </p>
-          <p class="review-date text-muted">${new Date(review.time * 1000).toLocaleDateString()}               
-          <a href="${place.url}" target="_blank" class="btn btn-see-more-review">
-              See More
-            </a>         
-             </p>
-        </div>
-      `;
+                        row.appendChild(col);
+                    }
 
-      row.appendChild(col);
-    }
-
-    carouselItem.appendChild(row);
-    reviewsContainer.appendChild(carouselItem);
-  }
+                    carouselItem.appendChild(row);
+                    reviewsContainer.appendChild(carouselItem);
+                }
         
-      } else {
-        console.error("Error fetching reviews:", status);
-      }
-    }
-  );
-}
+                } else {
+                console.error("Error fetching reviews:", status);
+            }
+            }
+            );
+        }
 
-// Initialize reviews on page load
-window.onload = initReviews;
+        // Initialize reviews on page load
+        window.onload = initReviews;
     </script>
     <script>
         // EMAIL JS //
-// emailjs.init("x252OMw2BYcceMKG6"); // Replace with your actual EmailJS public key
+        // emailjs.init("x252OMw2BYcceMKG6"); // Replace with your actual EmailJS public key
 
-(function(){
-      emailjs.init({
-        publicKey: "x252OMw2BYcceMKG6",
-      });
-   })();
+        (function(){
+            emailjs.init({
+                publicKey: "x252OMw2BYcceMKG6",
+            });
+        })();
 
-document.getElementById("emailForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+        document.getElementById("emailForm").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-  const templateParams = {
-      from_name: document.getElementById("name").value,
-      to_name: 'So Smile Dental',
-      from_email: document.getElementById("email").value,
-      email: 'nicklim128@gmail.com',
-      contact: document.getElementById("contact_no").value,
-      message: document.getElementById("message").value,
-      reply_to: "sosmiledental@gmail.com"
-  };
-  console.log(templateParams);
-  emailjs
-      .send("service_a1fhrfi", "template_acza1a5", templateParams)
-      .then(
-          (response) => {
-              console.log("SUCCESS!", response.status, response.text);
-              alert("Email sent successfully!");
-          },
-          (error) => {
-              console.error("FAILED...", error);
-              alert("Failed to send email.");
-          }
-      );
-});
+            const templateParams = {
+                from_name: document.getElementById("name").value,
+                to_name: 'So Smile Dental',
+                from_email: document.getElementById("email").value,
+                email: 'nicklim128@gmail.com',
+                contact: document.getElementById("contact_no").value,
+                message: document.getElementById("message").value,
+                reply_to: "sosmiledental@gmail.com"
+            };
+
+            emailjs
+            .send("service_a1fhrfi", "template_acza1a5", templateParams)
+            .then(
+                (response) => {
+                    // console.log("SUCCESS!", response.status, response.text);
+                    //   alert("Email sent successfully!");
+                    showAlert("success", "Email sent successfully! Thank you for reaching out.");
+
+                },
+                (error) => {
+                    // console.error("FAILED...", error);
+                    //   alert("Failed to send email.");
+                    showAlert("danger", "Failed to send email. Please try again later.");
+                }
+            );
+        });
 
 
-// END OF EMAIL JS //
+        // Function to Show Bootstrap Alert
+        function showAlert(type, message) {
+            const alertContainer = document.getElementById("alertContainer");
+
+            // Clear Existing Alerts
+            alertContainer.innerHTML = "";
+
+            // Create Alert Element
+            const alert = document.createElement("div");
+            alert.className = `alert alert-${type} alert-dismissible fade show text-center`;
+            alert.role = "alert";
+            alert.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+
+            // Append Alert to Container
+            alertContainer.appendChild(alert);
+        }
+
+
+        // END OF EMAIL JS //
 
 
     </script>
