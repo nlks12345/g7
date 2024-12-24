@@ -111,6 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
 /* END FOR PAGINATION JS */
 
 
+document.addEventListener('contextmenu', function (event) {
+    if (event.target.tagName === 'IMG') {
+        event.preventDefault();
+    }
+});
 
 // ON LOAD PROMOTION POP OUT
 
