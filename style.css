@@ -49,6 +49,10 @@ footer {
   justify-content: space-between;
 }
 
+.promo-img {
+  height: 350px;
+}
+
 /*.carousel-item img {
   width: 100%; /* Ensures the image spans the full width of the carousel */
  /* height: 600px; /* Maintains the aspect ratio */
